@@ -129,9 +129,9 @@ Ready to automate?
 Once commands are executed, their output is neatly organized for you in the "**Job Output**" section. To see the specific results for a host, just select it from the "**Host Status**" tree view.
 
 * * *
-### CISCO IOS 17 Compliance
+### CISCO IOS 17 Compliance Report
 
-![ShellPilot User Interface](images/CISCO_Compliance_Report.gif)
+![ShellPilot User Interface](images/complianceReportCisco17.gif)
 
 * * *
 
