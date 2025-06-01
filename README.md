@@ -111,6 +111,9 @@ uptime
 ```
 
 * * *
+### CISCO IOS 17 SCD Control
+
+![ShellPilot User Interface](images/CISCO_Router_IOS _17_Control.gif)
 
 ### Execution Control
 
