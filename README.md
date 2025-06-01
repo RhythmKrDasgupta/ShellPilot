@@ -1,9 +1,7 @@
 ## ShellPilot User Guide
 
 * * *
-![ShellPilot User Interface](ShellPilotGUI.gif)
-
-
+![ShellPilot User Interface](images/ShellPilot_Demo.gif)
 
 ### Overview
 
@@ -26,7 +24,7 @@ ShellPilot simplifies complex SSH automation, giving you unparalleled control an
 
 ### ShellPilot UI
 
-![ShellPilot User Interface](ShellPilotGUI.gif)
+![ShellPilot User Interface](images/ShellPilotGUI.gif)
 
 * * *
 
