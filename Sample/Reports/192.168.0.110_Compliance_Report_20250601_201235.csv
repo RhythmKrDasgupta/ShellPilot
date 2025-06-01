@@ -1,0 +1,1186 @@
+Host,CIS Reference,Control Name,Executed_Command,Terminal_Output,Keywords,Complaint Status,Scan Date
+192.168.0.110,1.1.1,Enable 'aaa new-model',show running-config | inc aaa new-model,aaa new-model,"""aaa new-model""",Compliant,01-06-2025 20:10
+192.168.0.110,1.1.2,Enable 'aaa authentication login',show running-config | incl aaa authentication login,"aaa authentication login default group tacacs+ local
+aaa authentication login no_tacacs local","""aaa authentication login default group ISE group tacacs+ local,aaa authentication login console group tacacs+ local""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.1.3,Enable 'aaa authentication enable default',show running-config | incl aaa authentication enable,aaa authentication enable default group tacacs+ enable,"""aaa authentication enable defualt group  tacacs+ enable""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.1.4,Set 'login authentication for 'line con 0',show running-config | sec line | incl login authentication,"line con 0
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ no modem enable
+line aux 0
+line 3
+ modem InOut
+ speed 115200
+ flowcontrol hardware
+line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none
+line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""login authentication ISE""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.1.5,Set 'login authentication for 'line tty',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.1.6,Set 'login authentication for 'line vty',show running-config | sec line vty 0 4,"line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none","""login authentication ISE""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,nan,Set 'login authentication for 'line vty',show running-config | sec line vty 5 15,"line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""login authentication ISE""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.1.7,Set 'aaa accounting' to log all privileged use commands using 'commands 15',show running-config | sec line vty 0 4,"line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none","""privilege level 15""",Compliant,01-06-2025 20:10
+192.168.0.110,nan,Set 'aaa accounting' to log all privileged use commands using 'commands 15',show running-config | sec line vty 5 15,"line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""privilege level 15""",Compliant,01-06-2025 20:10
+192.168.0.110,1.1.9,Set 'aaa accounting exec',show running-config | incl aaa accounting exec,aaa accounting exec default start-stop group tacacs+,"""aaa accounting exec default start-stop group tacacs+""",Compliant,01-06-2025 20:10
+192.168.0.110,1.2.1,Set 'transport input ssh' for 'line vty' connections,show running-config | sec line vty 0 4,"line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none","""transport input ssh, transport output ssh""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,nan,Set 'transport input ssh' for 'line vty' connections,show running-config | sec line vty 5 15,"line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""transport input ssh, transport output ssh""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.2.2,Set 'no exec' for 'line aux 0',show running-config | sec line | incl login authentication,"line con 0
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ no modem enable
+line aux 0
+line 3
+ modem InOut
+ speed 115200
+ flowcontrol hardware
+line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none
+line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""no exec""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.2.3,Create 'access-list' for use with 'line vty',show access-lists Network-Admin-IN,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.2.4,Set 'access-class' for 'line vty',show running-config | sec line vty 0 4,"line vty 0 4
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output none","""access-class Network-Admin-IN in""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,nan,Set 'access-class' for 'line vty',show running-config | sec line vty 5 15,"line vty 5 15
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport input none
+ transport output none","""access-class Network-Admin-IN in""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.2.5,Set 'exec-timeout' to less than or equal to 10 minutes for 'line aux 0',show line aux 0,"Tty Typ     Tx/Rx    A Modem  Roty AccO AccI   Uses   Noise  Overruns   Int
+      1 AUX      0/0     -    -      -    -    -      0       0     0/0       -
+
+Line 1, Location: """", Type: """"
+Length: 24 lines, Width: 80 columns
+Status: Ready
+Capabilities: none
+Modem state: Ready
+Special Chars: Escape  Hold  Stop  Start  Disconnect  Activation
+                ^^x    none   -     -       none         
+Timeouts:      Idle EXEC    Idle Session   Modem Answer  Session   Dispatch
+               00:10:00        never                        none     not set
+                            Idle Session Disconnect Warning
+                              never 
+                            Login-sequence User Response
+                             00:00:30
+                            Autoselect Initial Wait
+                              not set 
+Modem type is unknown.
+Session limit is not set.
+Time since activation: never
+Editing is enabled.
+History is enabled, history size is 20.
+ --More--         DNS resolution in show commands is enabled
+Full user help is disabled
+Allowed input transports are none.
+Allowed output transports are pad telnet rlogin lapb-ta ssh.
+Preferred transport is telnet.
+Shell: enabled
+Shell trace: off
+No output characters are padded
+No special data dispatching characters","""Idle EXEC , 00:10:00""",Compliant,01-06-2025 20:10
+192.168.0.110,1.2.6,Set 'exec-timeout' to less than or equal to 10 minutes 'line console 0',show line console 0,"Tty Typ     Tx/Rx    A Modem  Roty AccO AccI   Uses   Noise  Overruns   Int
+      0 CTY              -    -      -    -    -      0       0     0/0       -
+
+Line 0, Location: """", Type: """"
+Length: 24 lines, Width: 80 columns
+Baud rate (TX/RX) is 9600/9600, no parity, 2 stopbits, 8 databits
+Status: Ready
+Capabilities: none
+Modem state: Ready
+Modem hardware state: noCTS noDSR  DTR RTS
+Special Chars: Escape  Hold  Stop  Start  Disconnect  Activation
+                ^^x    none   -     -       none         
+Timeouts:      Idle EXEC    Idle Session   Modem Answer  Session   Dispatch
+               00:05:00        never                        none     not set
+                            Idle Session Disconnect Warning
+                              never 
+                            Login-sequence User Response
+                             00:00:30
+                            Autoselect Initial Wait
+                              not set 
+Modem type is unknown.
+Session limit is not set.
+Time since activation: never
+ --More--         Editing is enabled.
+History is enabled, history size is 20.
+DNS resolution in show commands is enabled
+Full user help is disabled
+Allowed input transports are none.
+Allowed output transports are pad telnet rlogin lapb-ta ssh.
+Preferred transport is telnet.
+Shell: enabled
+Shell trace: off
+No output characters are padded
+No special data dispatching characters","""Idle EXEC , 00:10:00""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.2.8,Set 'exec-timeout' to less than or equal to 10 minutes 'line vty',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,nan,nan,show line vty 0,"Tty Typ     Tx/Rx    A Modem  Roty AccO AccI   Uses   Noise  Overruns   Int
+*    10 VTY              -    -      -    -    -   1495       0     0/0       -
+
+Line 10, Location: """", Type: ""xterm""
+Length: 0 lines, Width: 80 columns
+Baud rate (TX/RX) is 9600/9600
+Status: Ready, Active, No Exit Banner, Notify Process
+Capabilities: none
+Modem state: Ready
+Special Chars: Escape  Hold  Stop  Start  Disconnect  Activation
+                ^^x    none   -     -       none         
+Timeouts:      Idle EXEC    Idle Session   Modem Answer  Session   Dispatch
+               00:05:00        never                        none     not set
+                            Idle Session Disconnect Warning
+                              never 
+                            Login-sequence User Response
+                             00:00:30
+                            Autoselect Initial Wait
+                              not set 
+Modem type is unknown.
+Session limit is not set.
+Time since activation: 17:57:43
+Editing is enabled.
+ --More--         History is enabled, history size is 20.
+DNS resolution in show commands is enabled
+Full user help is disabled
+Allowed input transports are ssh.
+Allowed output transports are none.
+Preferred transport is telnet.
+Shell: disabled
+Shell trace: off
+No output characters are padded
+No special data dispatching characters","""Idle EXEC , 00:10:00""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,nan,nan,show line vty 5,"Tty Typ     Tx/Rx    A Modem  Roty AccO AccI   Uses   Noise  Overruns   Int
+     15 VTY              -    -      -    -    -      0       0     0/0       -
+
+Line 15, Location: """", Type: """"
+Length: 24 lines, Width: 80 columns
+Baud rate (TX/RX) is 9600/9600
+Status: No Exit Banner
+Capabilities: none
+Modem state: Idle
+Special Chars: Escape  Hold  Stop  Start  Disconnect  Activation
+                ^^x    none   -     -       none         
+Timeouts:      Idle EXEC    Idle Session   Modem Answer  Session   Dispatch
+               00:05:00        never                        none     not set
+                            Idle Session Disconnect Warning
+                              never 
+                            Login-sequence User Response
+                             00:00:30
+                            Autoselect Initial Wait
+                              not set 
+Modem type is unknown.
+Session limit is not set.
+Time since activation: never
+Editing is enabled.
+ --More--         History is enabled, history size is 20.
+DNS resolution in show commands is enabled
+Full user help is disabled
+Allowed input transports are none.
+Allowed output transports are none.
+Preferred transport is telnet.
+Shell: enabled
+Shell trace: off
+No output characters are padded
+No special data dispatching characters","""Idle EXEC , 00:10:00""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.2.9,Set 'transport input none' for 'line aux 0',show running-config | sec line aux 0,line aux 0,transport input none,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.3.1,Set the 'banner-text' for 'banner exec',show banner exec,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.3.2,Set the 'banner-text' for 'banner login',show banner login,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.3.3,Set the 'banner-text' for 'banner motd',show banner motd,"CCC
+
+
+***********************************************************************************
+*                   ! ! ! ! !   WARNING! ! ! ! !                                  *
+*           You are entering to Restricted Rhythm Bank Network                   *
+*             Unauthorized access and use of this system is                       *
+*              not permitted and is strictly prohibited by                        *
+*                 security policies and regulations.                              *
+*                                                                                 *
+*            UNAUTHORIZED USERS ARE SUBJECT TO CRIMINAL AND                       *
+*             CIVIL PENALTIES AS WELL AS COMPANY-INITIATED                        *
+*                      DISCIPLINARY PROCEEDINGS.                                  *
+***********************************************************************************","""*                   ! ! ! ! !   WARNING! ! ! ! !                                  *,""",Compliant,01-06-2025 20:10
+192.168.0.110,1.4.1,Set 'password' for 'enable secret',show running-config | inclu enable secret,enable secret 5 $1$jdnP$dBQFeCQJluTWJlK0.yv2N0,"""enable secret""",Compliant,01-06-2025 20:10
+192.168.0.110,1.4.2,Enable 'service password-encryption',sh run | incl service password-encryption,no service password-encryption,"""service password-encryption""",Compliant,01-06-2025 20:10
+192.168.0.110,1.4.3,Set 'username secret' for all local users,show run | incl username,username bdnopm secret 5 $1$RVv1$H5IgMsn47rLdTJS3qNM.e1,""" secret""",Compliant,01-06-2025 20:10
+192.168.0.110,1.5.1,Set 'no snmp-server' to disable SNMP when unused,show run | incl snmp,"snmp-server group BDNBR v3 priv 
+snmp-server group BDNBRGRP v3 auth 
+snmp-server group BDNBRGRP v3 priv 
+snmp-server group fisnetwork v3 priv 
+snmp-server view BDNBRVIEW iso included
+snmp-server view BDNBRVIEW mib-2 included
+snmp-server view BDNBRVIEW cisco included
+snmp-server community Rhythm@imc RO 98
+snmp-server community fisclient RO 99
+snmp-server ifindex persist
+snmp-server trap-source Vlan254
+snmp-server source-interface informs Vlan1
+snmp-server enable traps snmp linkdown linkup warmstart
+snmp-server enable traps bgp
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server host 10.1.62.25 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.26 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.27 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.28 informs version 3 priv BDNBR 
+snmp-server host 10.1.64.32 informs version 3 priv BDNBR 
+ --More--         snmp-server host 10.1.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.32 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.19 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.23 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.36 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.25 version 3 priv BDNBR 
+snmp-server host 10.1.62.26 version 3 priv BDNBR 
+snmp-server host 10.1.62.27 version 3 priv BDNBR 
+snmp-server host 10.1.62.28 version 3 priv BDNBR 
+snmp-server host 10.1.64.32 version 3 priv BDNBR 
+snmp-server host 10.1.64.33 version 3 priv BDNBR 
+snmp-server host 10.2.64.32 version 3 priv BDNBR 
+snmp-server host 10.2.64.33 version 3 priv BDNBR 
+snmp-server host 10.5.132.19 version 3 priv BDNBR 
+snmp-server host 10.5.132.23 version 3 priv BDNBR 
+snmp-server host 10.5.132.36 version 3 priv BDNBR 
+snmp-server host 10.192.33.91 version 2c fisclient  bgp",,Keywords Not Set,01-06-2025 20:10
+192.168.0.110,1.5.2,Unset 'private' for 'snmp-server community',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.5.3,Unset 'public' for 'snmp-server community',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.5.4,Do not set 'RW' for any 'snmp-server community',show run | in snmp-community,,"""RO""",Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.5.5,Set the ACL for each 'snmp-server community',Show snmp community,"Community name: ILMI
+Community Index: ILMI
+Community SecurityName: ILMI
+storage-type: read-only active
+
+
+Community name: Rhythm@imc
+Community Index: Rhythm@imc
+Community SecurityName: Rhythm@imc
+storage-type: nonvolatile activeaccess-list: 98
+
+
+Community name: fisclient
+Community Index: fisclient
+Community SecurityName: fisclient
+storage-type: nonvolatile activeaccess-list: 99
+
+
+Community name: fisclient@1
+Community Index: fisclient@1
+Community SecurityName: fisclient@1
+storage-type: nonvolatile activeaccess-list: 99
+ --More--         
+
+Community name: fisclient@100
+Community Index: fisclient@100
+Community SecurityName: fisclient@100
+storage-type: read-only activeaccess-list: 99
+
+
+Community name: fisclient@111
+Community Index: fisclient@111
+Community SecurityName: fisclient@111
+storage-type: read-only activeaccess-list: 99
+
+
+Community name: fisclient@254
+Community Index: fisclient@254
+Community SecurityName: fisclient@254
+storage-type: read-only activeaccess-list: 99
+
+
+Community name: fisclient@30
+Community Index: fisclient@30
+Community SecurityName: fisclient@30
+ --More--         storage-type: read-only activeaccess-list: 99
+
+
+Community name: fisclient@60
+Community Index: fisclient@60
+Community SecurityName: fisclient@60
+storage-type: read-only activeaccess-list: 99",ACTIVE-ACCESS-LIST,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.5.6,Create an 'access-list' for use with SNMP,show snmp user,"User name: BDNBR
+Engine ID: 800000090300F4CFE22AF680
+storage-type: nonvolatile activeaccess-list: 90
+Authentication Protocol: MD5
+Privacy Protocol: AES128
+Group-name: BDNBRGRP
+
+User name: bdnnoc
+Engine ID: 800000090300F4CFE22AF680
+storage-type: nonvolatile activeaccess-list: 99
+Authentication Protocol: SHA
+Privacy Protocol: AES256
+Group-name: fisnetwork",Privacy Protocol,Compliant,01-06-2025 20:10
+192.168.0.110,1.5.7,Set 'snmp-server host' when using SNMP,show run | incl snmp,"snmp-server group BDNBR v3 priv 
+snmp-server group BDNBRGRP v3 auth 
+snmp-server group BDNBRGRP v3 priv 
+snmp-server group fisnetwork v3 priv 
+snmp-server view BDNBRVIEW iso included
+snmp-server view BDNBRVIEW mib-2 included
+snmp-server view BDNBRVIEW cisco included
+snmp-server community Rhythm@imc RO 98
+snmp-server community fisclient RO 99
+snmp-server ifindex persist
+snmp-server trap-source Vlan254
+snmp-server source-interface informs Vlan1
+snmp-server enable traps snmp linkdown linkup warmstart
+snmp-server enable traps bgp
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server host 10.1.62.25 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.26 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.27 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.28 informs version 3 priv BDNBR 
+snmp-server host 10.1.64.32 informs version 3 priv BDNBR 
+ --More--         snmp-server host 10.1.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.32 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.19 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.23 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.36 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.25 version 3 priv BDNBR 
+snmp-server host 10.1.62.26 version 3 priv BDNBR 
+snmp-server host 10.1.62.27 version 3 priv BDNBR 
+snmp-server host 10.1.62.28 version 3 priv BDNBR 
+snmp-server host 10.1.64.32 version 3 priv BDNBR 
+snmp-server host 10.1.64.33 version 3 priv BDNBR 
+snmp-server host 10.2.64.32 version 3 priv BDNBR 
+snmp-server host 10.2.64.33 version 3 priv BDNBR 
+snmp-server host 10.5.132.19 version 3 priv BDNBR 
+snmp-server host 10.5.132.23 version 3 priv BDNBR 
+snmp-server host 10.5.132.36 version 3 priv BDNBR 
+snmp-server host 10.192.33.91 version 2c fisclient  bgp",,Keywords Not Set,01-06-2025 20:10
+192.168.0.110,1.5.8,Set 'snmp-server enable traps snmp',show run | incl snmp,"snmp-server group BDNBR v3 priv 
+snmp-server group BDNBRGRP v3 auth 
+snmp-server group BDNBRGRP v3 priv 
+snmp-server group fisnetwork v3 priv 
+snmp-server view BDNBRVIEW iso included
+snmp-server view BDNBRVIEW mib-2 included
+snmp-server view BDNBRVIEW cisco included
+snmp-server community Rhythm@imc RO 98
+snmp-server community fisclient RO 99
+snmp-server ifindex persist
+snmp-server trap-source Vlan254
+snmp-server source-interface informs Vlan1
+snmp-server enable traps snmp linkdown linkup warmstart
+snmp-server enable traps bgp
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server host 10.1.62.25 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.26 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.27 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.28 informs version 3 priv BDNBR 
+snmp-server host 10.1.64.32 informs version 3 priv BDNBR 
+ --More--         snmp-server host 10.1.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.32 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.19 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.23 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.36 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.25 version 3 priv BDNBR 
+snmp-server host 10.1.62.26 version 3 priv BDNBR 
+snmp-server host 10.1.62.27 version 3 priv BDNBR 
+snmp-server host 10.1.62.28 version 3 priv BDNBR 
+snmp-server host 10.1.64.32 version 3 priv BDNBR 
+snmp-server host 10.1.64.33 version 3 priv BDNBR 
+snmp-server host 10.2.64.32 version 3 priv BDNBR 
+snmp-server host 10.2.64.33 version 3 priv BDNBR 
+snmp-server host 10.5.132.19 version 3 priv BDNBR 
+snmp-server host 10.5.132.23 version 3 priv BDNBR 
+snmp-server host 10.5.132.36 version 3 priv BDNBR 
+snmp-server host 10.192.33.91 version 2c fisclient  bgp",,Keywords Not Set,01-06-2025 20:10
+192.168.0.110,1.5.9,Set 'priv' for each 'snmp-server group' using SNMPv3,show run | incl snmp,"snmp-server group BDNBR v3 priv 
+snmp-server group BDNBRGRP v3 auth 
+snmp-server group BDNBRGRP v3 priv 
+snmp-server group fisnetwork v3 priv 
+snmp-server view BDNBRVIEW iso included
+snmp-server view BDNBRVIEW mib-2 included
+snmp-server view BDNBRVIEW cisco included
+snmp-server community Rhythm@imc RO 98
+snmp-server community fisclient RO 99
+snmp-server ifindex persist
+snmp-server trap-source Vlan254
+snmp-server source-interface informs Vlan1
+snmp-server enable traps snmp linkdown linkup warmstart
+snmp-server enable traps bgp
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server host 10.1.62.25 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.26 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.27 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.28 informs version 3 priv BDNBR 
+snmp-server host 10.1.64.32 informs version 3 priv BDNBR 
+ --More--         snmp-server host 10.1.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.32 informs version 3 priv BDNBR 
+snmp-server host 10.2.64.33 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.19 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.23 informs version 3 priv BDNBR 
+snmp-server host 10.5.132.36 informs version 3 priv BDNBR 
+snmp-server host 10.1.62.25 version 3 priv BDNBR 
+snmp-server host 10.1.62.26 version 3 priv BDNBR 
+snmp-server host 10.1.62.27 version 3 priv BDNBR 
+snmp-server host 10.1.62.28 version 3 priv BDNBR 
+snmp-server host 10.1.64.32 version 3 priv BDNBR 
+snmp-server host 10.1.64.33 version 3 priv BDNBR 
+snmp-server host 10.2.64.32 version 3 priv BDNBR 
+snmp-server host 10.2.64.33 version 3 priv BDNBR 
+snmp-server host 10.5.132.19 version 3 priv BDNBR 
+snmp-server host 10.5.132.23 version 3 priv BDNBR 
+snmp-server host 10.5.132.36 version 3 priv BDNBR 
+snmp-server host 10.192.33.91 version 2c fisclient  bgp",,Keywords Not Set,01-06-2025 20:10
+192.168.0.110,1.5.10,Require 'aes 128' as minimum for 'snmp-server user' when using SNMPv3,show snmp user,"User name: BDNBR
+Engine ID: 800000090300F4CFE22AF680
+storage-type: nonvolatile activeaccess-list: 90
+Authentication Protocol: MD5
+Privacy Protocol: AES128
+Group-name: BDNBRGRP
+
+User name: bdnnoc
+Engine ID: 800000090300F4CFE22AF680
+storage-type: nonvolatile activeaccess-list: 99
+Authentication Protocol: SHA
+Privacy Protocol: AES256
+Group-name: fisnetwork","""AES""",Compliant,01-06-2025 20:10
+192.168.0.110,1.6.1,Set the 'hostname',sh run | in hostname,hostname BBL-C075-Belghoria-891F,"""hostname""",Compliant,01-06-2025 20:10
+192.168.0.110,1.6.2,Set the 'no ip domainserver',sh run | in domain,"domain-name Rhythm.local
+ domain-name Rhythm.local
+ domain-name Rhythm.local
+no ip domain lookup
+ip domain name Rhythmbank.com",Output should refelect,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.6.3,Set the 'no ip http secure-server',sh run | in http,"no ip http server
+no ip http secure-server",Output should refelect,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.6.6,Set 'modulus' to greater than or equal to 2048 for 'crypto key generate rsa',show ip ssh,"SSH Enabled - version 2.0
+Authentication methods:publickey,keyboard-interactive,password
+Authentication Publickey Algorithms:x509v3-ssh-rsa,ssh-rsa
+Hostkey Algorithms:x509v3-ssh-rsa,ssh-rsa
+Encryption Algorithms:aes128-ctr,aes192-ctr,aes256-ctr
+MAC Algorithms:hmac-sha1,hmac-sha1-96
+Authentication timeout: 30 secs; Authentication retries: 3
+Minimum expected Diffie Hellman key size : 1024 bits
+IOS Keys in SECSH format(ssh-rsa, base64 encoded): BBL-C075-Belghoria-891F.Rhythmbank.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVPErddQS1ccBoDmF4UqdDt3wsBlOoDQ2kxj4bMA+/
+lcScsRRRpYFVx5g6svuNPrDIjRoel983081eTTWATQdoxw3RiGGH3kW9CaV4MxGJkPGqf9cCbGQJn7Fc
+qq7Z9xB44B42E+vY9s0yUSyLL+9OCAritby7IcBZ79l4z7ygnu9pM0IECHpoaBp2TL7IPR810/MQbXyY
+TZOOj8g1GHn9kM5RCgpo0zr2c+mMQM1ryJfgg7NJYuXJ6X5gfrGEXxxjY9DGGDX/H0FcwgGNiYdIanBW
+nh1LNt0lmx+dw6meIzi6g0Ws6KO+JeOKkBf2wX3gk24wkToTv4huE5SBy5x5","""SSH Enabled - version 2.0, Authentication timeout: 10 secs; Authentication retries: 3, Minimum expected Diffie Hellman key size : 2048 bits""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.6.7,Set 'seconds' for 'ip ssh timeout',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.8,Set maximum value for 'ip ssh authentication-retries',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.9,Set version 2 for 'ip ssh version',nan,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.10,Set 'no cdp run',sh cdp neighbour,"^
+% Invalid input detected at '^' marker.","""% CDP is not enabled""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.6.11,Set 'no ip identd',sh run all | in identd,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.12,Set 'service tcp-keepalives-in',show run | incl service tcp,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.13,Set 'service tcp-keepalives-out',show run | incl service tcp,,,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.6.14,Set 'no service pad',sh run all | in pad service,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.7.1,Set 'logging on',sh logging,"Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 8170 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level informational, 8167 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (8192 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 8176 message lines logged
+ --More--                 Logging Source-Interface:       VRF Name:
+        Loopback1                       
+
+Log Buffer (8192 bytes):
+ group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 9, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 10:50:23: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 12:32:25: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 12:32:25: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 13, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 12:32:25: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 14:14:27: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 14:14:27: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 17, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 14:14:27: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 15:56:29: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 15:56:29: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 21, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 27 15:56:29: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 17:38:30: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 17:38:30: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 25, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 17:38:30: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 19:20:32: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 19:20:32: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 29, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 19:20:32: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 21:02:34: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 21:02:34: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 33, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 21:02:34: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 22:44:36: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 22:44:36: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 37, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 27 22:44:36: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 00:26:37: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 00:26:37: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 41, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 00:26:37: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 02:08:39: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 02:08:39: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 45, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 02:08:39: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 03:50:41: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 03:50:41: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 49, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 03:50:41: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 05:32:43: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 05:32:43: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 53, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 28 05:32:43: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 06:43:43: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 06:43:43: %GDOI-5-SA_KEK_UPDATED: SA KEK was updated 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 06:43:43: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 57, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 06:43:43: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 07:14:44: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 07:14:44: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 1, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 07:14:44: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 08:56:46: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 08:56:46: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 5, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 08:56:46: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+ --More--         May 28 10:38:48: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 10:38:48: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 9, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 10:38:48: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 12:20:50: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 12:20:50: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 13, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 12:20:50: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 14:02:52: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 14:02:52: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 17, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 14:02:52: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 15:44:53: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 15:44:53: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 21, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 15:44:53: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+ --More--         May 28 17:26:55: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 17:26:55: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 25, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 17:26:55: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default",Output should refelect,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.7.2,Set 'buffer size' for 'logging buffered',show run | incl logging buffered,logging buffered informational,"""logging buffered 64000""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.7.3,Set 'logging console critical',show run | incl logging console,,"""logging console critical""",Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.7.4,Set IP address for 'logging host',show run | i logging host,,"""logging buffered 64000, logging console critical, logging monitor informational, logging origin-id string SYSLOG, logging facility syslog""",Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.7.5,Set 'logging trap informational',sh logging,"Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 8170 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level informational, 8167 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (8192 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 8176 message lines logged
+ --More--                 Logging Source-Interface:       VRF Name:
+        Loopback1                       
+
+Log Buffer (8192 bytes):
+ group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 9, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 10:50:23: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 12:32:25: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 12:32:25: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 13, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 12:32:25: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 14:14:27: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 14:14:27: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 17, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 14:14:27: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 15:56:29: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 15:56:29: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 21, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 27 15:56:29: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 17:38:30: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 17:38:30: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 25, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 17:38:30: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 19:20:32: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 19:20:32: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 29, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 19:20:32: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 21:02:34: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 21:02:34: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 33, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 27 21:02:34: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 27 22:44:36: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 27 22:44:36: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 37, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 27 22:44:36: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 00:26:37: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 00:26:37: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 41, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 00:26:37: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 02:08:39: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 02:08:39: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 45, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 02:08:39: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 03:50:41: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 03:50:41: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 49, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 03:50:41: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 05:32:43: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 05:32:43: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 53, spi 0x2873645B85C282DEC6F7E29DBE552C90
+ --More--         May 28 05:32:43: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 06:43:43: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 06:43:43: %GDOI-5-SA_KEK_UPDATED: SA KEK was updated 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 06:43:43: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 57, spi 0x2873645B85C282DEC6F7E29DBE552C90
+May 28 06:43:43: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 07:14:44: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 07:14:44: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 1, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 07:14:44: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 08:56:46: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 08:56:46: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 5, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 08:56:46: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+ --More--         May 28 10:38:48: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 10:38:48: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 9, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 10:38:48: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 12:20:50: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 12:20:50: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 13, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 12:20:50: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 14:02:52: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 14:02:52: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 17, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 14:02:52: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+May 28 15:44:53: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 15:44:53: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 21, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 15:44:53: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default
+ --More--         May 28 17:26:55: %GDOI-5-SA_TEK_UPDATED: SA TEK was updated
+May 28 17:26:55: %GDOI-5-GM_RECV_REKEY: Received Rekey for group BDNGETVPN from 10.5.254.67 to 10.254.0.72 with seq # 25, spi 0xD60F0EE3C8608DCFE3E45C97A79BC58C
+May 28 17:26:55: %GDOI-5-GM_INSTALL_POLICIES_SUCCESS: SUCCESS: Installation of Reg/Rekey policies from KS 10.5.254.67 for group BDNGETVPN & gm identity 10.254.0.72 fvrf default ivrf default",Output should refelect,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.7.6,Set 'service timestamps debug datetime',sh run | incl service timestamps,"service timestamps debug datetime msec
+service timestamps log datetime localtime","""service timestamps debug datetime, service timestamps log datetime msec localtime""",Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.7.7,Set 'logging source interface',show run | incl logging source,logging source-interface Loopback1,"""logging source-interface""",Compliant,01-06-2025 20:10
+192.168.0.110,1.8.2,Set 'ip address' for 'ntp server',show run | include ntp,"ntp authentication-key 111 md5 0006330800532B08 7
+ntp authenticate
+ntp trusted-key 111
+ntp source Vlan254
+ntp update-calendar
+ntp server 10.1.62.11 prefer
+ntp server 10.2.62.11
+ntp server 10.1.62.12
+ntp server 10.2.62.12",Output should refelect,Non-Compliant,01-06-2025 20:10
+192.168.0.110,1.9.1,Set 'no ip source-route',sh run | in no ip source route,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.9.2,Set 'no ip proxy-arp',sh run | in no ip proxy-arp,"no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp
+ no ip proxy-arp","""no ip proxy-arp""",Compliant,01-06-2025 20:10
+192.168.0.110,1.11.5,Unused routing protocol should be disable,sh ip bgp,"BGP table version is 109244, local router ID is 10.255.0.72
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *    3.6.151.231/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   3.7.104.66/32    172.18.1.81                            0 9730 64600 i
+ *    8.25.203.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   8.36.116.0/24    172.18.1.81                            0 9730 64600 i
+ *>   8.39.144.0/24    172.18.1.81                            0 9730 64600 i
+ *    10.0.67.57/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.1.0.0/16      172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   10.1.64.27/32    172.18.1.81                   200      0 9730 64600 i
+ *                     172.16.1.81                   150      0 9583 64600 i
+ *>   10.1.64.28/32    172.18.1.81                   200      0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *                     172.16.1.81                   150      0 9583 64600 i
+ *    10.1.180.107/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.1.207.4/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.2.0.0/16      172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    10.2.62.42/32    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    10.2.62.43/32    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    10.2.64.13/32    172.18.1.81                            0 9730 64601 64601 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 64601 64601 64601 64601 64601 i
+ *    10.2.254.220/32  172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    10.4.110.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.129.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.131.0/24    172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.132.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.133.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.134.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.135.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.4.254.67/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.5.128.0/21    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *>   10.5.133.0/24    172.18.1.81                            0 9730 64602 i
+ *>   10.5.133.9/32    172.18.1.81                            0 9730 64602 i
+ *    10.5.254.67/32   172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *>   10.6.1.0/26      172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.1.96/29     172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.2.0/26      172.18.1.81                            0 9730 64602 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.6.2.128/26    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 i
+ *>   10.6.2.208/28    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.2.224/29    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.2.234/32    172.18.1.81                            0 9730 64602 i
+ *>   10.6.2.241/32    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.2.242/32    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.6.128/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.6.79.0/27     0.0.0.0                  0         32768 i
+ *>   10.6.79.32/27    0.0.0.0                  0         32768 i
+ *>   10.6.79.64/27    0.0.0.0                  0         32768 i
+ *>   10.6.79.96/29    0.0.0.0                  0         32768 i
+ *>   10.6.79.128/25   0.0.0.0                  0         32768 i
+ *    10.8.191.0/24    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.131/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *    10.8.191.133/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.135/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.136/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.137/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.138/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.161/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.162/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.8.191.224/32  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   10.8.251.0/25    172.18.1.81                            0 9730 64602 i
+ *>   10.9.239.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.240.0/24    172.18.1.81                            0 9730 64602 i
+ *>   10.9.241.64/27   172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.9.241.128/26  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.242.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.242.128/25  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.243.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.243.128/25  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.244.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.244.128/26  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.244.192/26  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.245.0/24    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.246.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.246.128/26  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.9.247.0/24    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.248.0/25    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.248.128/25  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.249.0/24    172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.9.252.72/32   0.0.0.0                  0         32768 i
+ *>   10.9.254.177/32  172.18.1.81                            0 9730 64602 i
+ *>   10.9.255.218/32  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.10.0.0/21     172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.11.222.0/23   172.18.1.81                            0 9730 64602 i
+ *>   10.11.224.0/19   172.18.1.81                            0 9730 64602 i
+ *>   10.11.238.0/27   172.18.1.81                            0 9730 64602 i
+ *    10.13.0.0/16     172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.19.84.65/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.22.0.0/16     172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.22.4.32/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.22.4.115/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.22.5.247/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.22.5.251/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.28.1.42/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.28.1.143/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.28.1.170/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.28.3.51/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.28.6.167/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.29.1.65/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.29.1.143/32   172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.29.1.197/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.29.3.51/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.29.6.151/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.30.84.64/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.30.84.65/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.31.84.65/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.35.1.28/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.35.1.238/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.35.2.143/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.35.3.51/32    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.35.8.235/32   172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.95.239.199/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.100.0.61/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.120.0.61/32   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.123.2.20/30   172.18.1.81                            0 9730 64600 ?
+ *>                    172.16.1.81                   150      0 9583 64600 ?
+ *>   10.192.15.0/27   172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.192.15.154/32 172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.192.15.162/32 172.18.1.81                            0 9730 64602 i
+ *>   10.192.16.0/24   172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *    10.192.32.0/24   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    10.192.33.0/24   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   10.254.0.72/32   0.0.0.0                  0         32768 i
+ *>   10.254.0.87/32   172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.254.2.197/32  172.18.1.81                            0 9730 64602 i
+ *>   10.254.2.200/32  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.254.3.68/32   172.18.1.81                            0 9730 64602 i
+ *    10.254.3.240/32  172.18.1.81                            0 9730 64601 ?
+ *>                    172.16.1.81                   150      0 9583 64601 ?
+ *>   10.254.4.228/32  172.16.1.81                   150      0 9583 64601 i
+ *>   10.254.6.125/32  172.18.1.81                            0 9730 64600 i
+ *>   10.254.6.126/32  172.16.1.81                   150      0 9583 64600 i
+ *>   10.255.0.72/32   0.0.0.0                  0         32768 i
+ *>   10.255.2.197/32  172.18.1.81                            0 9730 64602 i
+ *>   10.255.2.200/32  172.18.1.81                            0 9730 64602 64602 64602 64602 64602 64602 64602 i
+ *>   10.255.3.68/32   172.18.1.81                            0 9730 64602 i
+ *    13.107.0.0/16    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    20.42.65.89/32   172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    20.190.0.0/16    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.46.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *    23.47.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.48.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.54.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.64.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.76.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    23.223.0.0/16    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *>   31.186.239.0/24  172.18.1.81                            0 9730 64600 i
+ *    40.99.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    40.126.0.0/16    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    45.114.78.22/32  172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    49.44.0.0/16     172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    51.104.15.253/32 172.18.1.81                            0 9730 64601 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *>   51.105.0.0/16    172.16.1.81                   150      0 9583 64601 i
+ *    52.112.0.0/14    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    52.122.0.0/15    172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    52.168.117.175/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    52.238.119.141/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    52.244.160.207/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    64.74.126.64/26  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    70.39.159.0/24   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    72.52.96.0/26    172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    89.167.131.0/24  172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    103.58.114.156/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   103.219.79.0/24  172.18.1.81                            0 9730 64600 i
+ *    104.129.192.0/20 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    104.208.0.0/16   172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    112.196.99.180/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    136.226.0.0      172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    137.83.128.0/18  172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    147.161.128.0/17 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    152.65.205.50/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    152.65.230.50/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *    152.119.0.0      172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    152.195.0.0      172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    152.199.0.0      172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    156.55.159.32/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    156.55.159.33/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    156.55.159.48/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    156.55.159.49/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    159.43.102.78/32 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   163.116.128.0/17 172.18.1.81                            0 9730 64600 i
+ *>   163.116.195.0/24 172.18.1.81                            0 9730 64600 i
+ *>   163.116.196.0/24 172.18.1.81                            0 9730 64600 i
+ *>   163.116.199.0/24 172.18.1.81                            0 9730 64600 i
+ *>   163.116.205.0/24 172.18.1.81                            0 9730 64600 i
+ *>   163.116.219.0/24 172.18.1.81                            0 9730 64600 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *    165.225.0.0/17   172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    165.225.192.0/18 172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    167.103.0.0      172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    170.85.0.0       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   170.186.212.64/32
+                       172.18.1.81                            0 9730 64600 i
+ *    170.186.212.66/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    170.186.212.67/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    170.186.212.76/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *    170.186.212.77/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *    170.186.212.78/32
+                       172.18.1.81                            0 9730 64601 i
+ *>                    172.16.1.81                   150      0 9583 64601 i
+ *>   170.186.212.152/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   170.186.212.153/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   170.186.213.64/32
+                       172.18.1.81                            0 9730 64600 i
+ *    170.186.213.66/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    170.186.213.67/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    170.186.213.76/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    170.186.213.77/32
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *    170.186.213.78/32
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+                       172.18.1.81                            0 9730 64600 i
+ *>                    172.16.1.81                   150      0 9583 64600 i
+ *>   170.186.213.152/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   170.186.213.153/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   170.186.213.158/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   170.186.213.188/32
+                       172.18.1.81                            0 9730 64600 i
+ *>   172.3.58.72/29   172.18.1.81                            0 9730 ?
+ *    172.16.0.8/30    172.18.1.81                            0 9730 64600 ?
+ *>                    172.16.1.81                   150      0 9583 ?
+ *    172.16.0.12/30   172.18.1.81                            0 9730 64601 ?
+ *>                    172.16.1.81                   150      0 9583 ?
+ *    172.16.1.80/30   172.16.1.81              0    150      0 9583 ?
+ *>                    0.0.0.0                  0         32768 i
+ *    172.17.0.8/30    172.18.1.81                            0 9730 64600 ?
+ *>                    172.16.1.81                   150      0 9583 64600 ?
+ *>   172.17.161.81/32 172.18.1.81                            0 9730 64600 i
+ *    172.18.0.8/30    172.18.1.81                            0 9730 ?
+ *>                    172.16.1.81                   150      0 9583 64600 ?
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   172.18.0.12/30   172.18.1.81                            0 9730 ?
+ *>   172.18.0.16/30   172.18.1.81                            0 9730 ?
+ *>   172.18.0.225/32  172.18.1.81                            0 9730 ?
+ *>   172.18.0.226/32  172.18.1.81                            0 9730 ?
+ *    172.18.1.80/30   172.18.1.81              0             0 9730 ?
+ *>                    0.0.0.0                  0         32768 i
+ *>   172.18.1.85/32   172.18.1.81                            0 9730 ?
+ *>   172.18.1.86/32   172.18.1.81                            0 9730 ?
+ *>   172.18.1.117/32  172.18.1.81                            0 9730 ?
+ *>   172.18.1.118/32  172.18.1.81                            0 9730 ?
+ *>   172.18.2.61/32   172.18.1.81                            0 9730 ?
+ *>   172.18.2.62/32   172.18.1.81                            0 9730 ?
+ *>   172.18.3.81/32   172.18.1.81                            0 9730 ?
+ *>   172.18.3.82/32   172.18.1.81                            0 9730 ?
+ *>   172.18.3.173/32  172.18.1.81                            0 9730 ?
+ *>   172.18.3.174/32  172.18.1.81                            0 9730 ?
+ *>   172.18.3.177/32  172.18.1.81                            0 9730 ?
+ *>   172.18.3.178/32  172.18.1.81                            0 9730 ?
+ *>   172.18.4.1/32    172.18.1.81                            0 9730 ?
+ *>   172.18.4.2/32    172.18.1.81                            0 9730 ?
+ *>   172.18.5.81/32   172.18.1.81                            0 9730 ?
+ *>   172.18.5.82/32   172.18.1.81                            0 9730 ?
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   172.18.5.169/32  172.18.1.81                            0 9730 ?
+ *>   172.18.5.170/32  172.18.1.81                            0 9730 ?
+ *>   172.18.6.29/32   172.18.1.81                            0 9730 ?
+ *>   172.18.6.30/32   172.18.1.81                            0 9730 ?
+ *>   172.18.6.215/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.57/32   172.18.1.81                            0 9730 ?
+ *>   172.18.7.58/32   172.18.1.81                            0 9730 ?
+ *>   172.18.7.204/30  172.18.1.81                            0 9730 ?
+ *>   172.18.7.237/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.238/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.249/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.250/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.253/32  172.18.1.81                            0 9730 ?
+ *>   172.18.7.254/32  172.18.1.81                            0 9730 ?
+ *>   172.18.8.85/32   172.18.1.81                            0 9730 ?
+ *>   172.18.8.86/32   172.18.1.81                            0 9730 ?
+ *>   172.18.8.117/32  172.18.1.81                            0 9730 ?
+ *>   172.18.8.118/32  172.18.1.81                            0 9730 ?
+ *>   172.18.9.9/32    172.18.1.81                            0 9730 ?
+ *>   172.18.9.10/32   172.18.1.81                            0 9730 ?
+ *>   172.18.9.21/32   172.18.1.81                            0 9730 ?
+ *>   172.18.9.22/32   172.18.1.81                            0 9730 ?
+ --More--              Network          Next Hop            Metric LocPrf Weight Path
+ *>   172.18.9.109/32  172.18.1.81                            0 9730 ?
+ *>   172.18.10.60/30  172.18.1.81                            0 9730 ?
+ *>   172.18.10.204/30 172.18.1.81                            0 9730 ?
+ *>   172.18.11.1/32   172.18.1.81                            0 9730 ?
+ *>   17",,,
+,,,01-06-2025 20:10,,,,
+192.168.0.110,nan,Unused routing protocol should be disable,sh ip ospf,,Output should refelect,Terminal_Output Empty or Not Run,01-06-2025 20:10
+192.168.0.110,1.11.7,Unused port should be disabled,sh ip int brief,"Interface                  IP-Address      OK? Method Status                Protocol
+Async3                     unassigned      YES unset  down                  down    
+BRI0                       unassigned      YES NVRAM  administratively down down    
+BRI0:1                     unassigned      YES unset  administratively down down    
+BRI0:2                     unassigned      YES unset  administratively down down    
+FastEthernet0              172.16.1.82     YES NVRAM  up                    up      
+GigabitEthernet0           unassigned      YES unset  up                    up      
+GigabitEthernet1           unassigned      YES unset  down                  down    
+GigabitEthernet2           unassigned      YES unset  down                  down    
+GigabitEthernet3           unassigned      YES unset  down                  down    
+GigabitEthernet4           unassigned      YES unset  down                  down    
+GigabitEthernet5           unassigned      YES unset  down                  down    
+ --More--         GigabitEthernet6           unassigned      YES unset  down                  down    
+GigabitEthernet7           unassigned      YES unset  down                  down    
+GigabitEthernet8           172.18.1.82     YES NVRAM  up                    up      
+Loopback0                  10.254.0.72     YES NVRAM  up                    up      
+Loopback1                  10.255.0.72     YES NVRAM  up                    up      
+Loopback100                10.9.252.72     YES NVRAM  up                    up      
+NVI0                       172.16.1.82     YES unset  up                    up      
+Vlan1                      unassigned      YES unset  administratively down down    
+Vlan30                     10.6.79.33      YES NVRAM  up                    up      
+Vlan60                     10.6.79.65      YES NVRAM  up                    up      
+Vlan100                    10.6.79.97      YES NVRAM  up                    up      
+Vlan111                    10.6.79.129     YES NVRAM  up                    up      
+ --More--         Vlan254                    10.6.79.1       YES NVRAM  up                    up",Output should refelect,Non-Compliant,01-06-2025 20:10

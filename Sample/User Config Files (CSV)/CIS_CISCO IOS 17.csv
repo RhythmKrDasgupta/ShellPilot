@@ -1,0 +1,65 @@
+CIS Reference,Control Name,Control Command,Keywords
+1.1.1,Enable 'aaa new-model',show running-config | inc aaa new-model,"""aaa new-model"""
+1.1.2,Enable 'aaa authentication login',show running-config | incl aaa authentication login,"""aaa authentication login default group ISE group tacacs+ local,aaa authentication login console group tacacs+ local"""
+1.1.3,Enable 'aaa authentication enable default',show running-config | incl aaa authentication enable,"""aaa authentication enable defualt group  tacacs+ enable"""
+1.1.4,Set 'login authentication for 'line con 0',show running-config | sec line | incl login authentication,"""login authentication ISE"""
+1.1.5,Set 'login authentication for 'line tty',,
+1.1.6,Set 'login authentication for 'line vty',show running-config | sec line vty 0 4,"""login authentication ISE"""
+nan,Set 'login authentication for 'line vty',show running-config | sec line vty 5 15,"""login authentication ISE"""
+1.1.7,Set 'aaa accounting' to log all privileged use commands using 'commands 15',show running-config | sec line vty 0 4,"""privilege level 15"""
+nan,Set 'aaa accounting' to log all privileged use commands using 'commands 15',show running-config | sec line vty 5 15,"""privilege level 15"""
+1.1.9,Set 'aaa accounting exec',show running-config | incl aaa accounting exec,"""aaa accounting exec default start-stop group tacacs+"""
+1.2.1,Set 'transport input ssh' for 'line vty' connections,show running-config | sec line vty 0 4,"""transport input ssh, transport output ssh"""
+nan,Set 'transport input ssh' for 'line vty' connections,show running-config | sec line vty 5 15,"""transport input ssh, transport output ssh"""
+1.2.2,Set 'no exec' for 'line aux 0',show running-config | sec line | incl login authentication,"""no exec"""
+1.2.3,Create 'access-list' for use with 'line vty',show access-lists Network-Admin-IN,
+1.2.4,Set 'access-class' for 'line vty',show running-config | sec line vty 0 4,"""access-class Network-Admin-IN in"""
+nan,Set 'access-class' for 'line vty',show running-config | sec line vty 5 15,"""access-class Network-Admin-IN in"""
+1.2.5,Set 'exec-timeout' to less than or equal to 10 minutes for 'line aux 0',show line aux 0,"""Idle EXEC , 00:10:00"""
+1.2.6,Set 'exec-timeout' to less than or equal to 10 minutes 'line console 0',show line console 0,"""Idle EXEC , 00:10:00"""
+1.2.8,Set 'exec-timeout' to less than or equal to 10 minutes 'line vty',,
+nan,,show line vty 0 ,"""Idle EXEC , 00:10:00"""
+nan,,show line vty 5,"""Idle EXEC , 00:10:00"""
+1.2.9,Set 'transport input none' for 'line aux 0',show running-config | sec line aux 0,transport input none
+1.3.1,Set the 'banner-text' for 'banner exec',show banner exec,Output should refelect
+1.3.2,Set the 'banner-text' for 'banner login',show banner login,Output should refelect
+1.3.3,Set the 'banner-text' for 'banner motd',show banner motd,"""*                   ! ! ! ! !   WARNING! ! ! ! !                                  *,"""
+1.4.1,Set 'password' for 'enable secret',show running-config | inclu enable secret,"""enable secret"""
+1.4.2,Enable 'service password-encryption',sh run | incl service password-encryption,"""service password-encryption"""
+1.4.3,Set 'username secret' for all local users,show run | incl username,""" secret"""
+1.5.1,Set 'no snmp-server' to disable SNMP when unused,show run | incl snmp,
+1.5.2,Unset 'private' for 'snmp-server community',nan,
+1.5.3,Unset 'public' for 'snmp-server community',nan,
+1.5.4,Do not set 'RW' for any 'snmp-server community',show run | in snmp-community,"""RO"""
+1.5.5,Set the ACL for each 'snmp-server community',Show snmp community,ACTIVE-ACCESS-LIST
+1.5.6,Create an 'access-list' for use with SNMP,show snmp user ,Privacy Protocol
+1.5.7,Set 'snmp-server host' when using SNMP,show run | incl snmp,
+1.5.8,Set 'snmp-server enable traps snmp',show run | incl snmp,
+1.5.9,Set 'priv' for each 'snmp-server group' using SNMPv3,show run | incl snmp,
+1.5.10,Require 'aes 128' as minimum for 'snmp-server user' when using SNMPv3,show snmp user,"""AES"""
+1.6.1,Set the 'hostname',sh run | in hostname,"""hostname"""
+1.6.2,Set the 'no ip domainserver',sh run | in domain,Output should refelect
+1.6.3,Set the 'no ip http secure-server',sh run | in http,Output should refelect
+1.6.6,Set 'modulus' to greater than or equal to 2048 for 'crypto key generate rsa',show ip ssh,"""SSH Enabled - version 2.0, Authentication timeout: 10 secs; Authentication retries: 3, Minimum expected Diffie Hellman key size : 2048 bits"""
+1.6.7,Set 'seconds' for 'ip ssh timeout',nan,
+1.6.8,Set maximum value for 'ip ssh authentication-retries',nan,
+1.6.9,Set version 2 for 'ip ssh version',nan,
+1.6.10,Set 'no cdp run',sh cdp neighbour,"""% CDP is not enabled"""
+1.6.11,Set 'no ip identd',sh run all | in identd,Output should refelect
+1.6.12,Set 'service tcp-keepalives-in',show run | incl service tcp,
+1.6.13,Set 'service tcp-keepalives-out',show run | incl service tcp,
+1.6.14,Set 'no service pad',sh run all | in pad service,Output should refelect
+1.7.1,Set 'logging on',sh logging,Output should refelect
+1.7.2,Set 'buffer size' for 'logging buffered',show run | incl logging buffered,"""logging buffered 64000"""
+1.7.3,Set 'logging console critical',show run | incl logging console,"""logging console critical"""
+1.7.4,Set IP address for 'logging host',show run | i logging host,"""logging buffered 64000, logging console critical, logging monitor informational, logging origin-id string SYSLOG, logging facility syslog"""
+1.7.5,Set 'logging trap informational',sh logging,Output should refelect
+1.7.6,Set 'service timestamps debug datetime',sh run | incl service timestamps,"""service timestamps debug datetime, service timestamps log datetime msec localtime"""
+1.7.7,Set 'logging source interface',show run | incl logging source,"""logging source-interface"""
+1.8.2,Set 'ip address' for 'ntp server',show run | include ntp,Output should refelect
+1.9.1,Set 'no ip source-route',sh run | in no ip source route,Output should refelect
+1.9.2,Set 'no ip proxy-arp',sh run | in no ip proxy-arp,"""no ip proxy-arp"""
+1.11.5,Unused routing protocol should be disable,sh ip bgp,
+,Compliant,,
+nan,Unused routing protocol should be disable,sh ip ospf,Output should refelect
+1.11.7,Unused port should be disabled,sh ip int brief,Output should refelect

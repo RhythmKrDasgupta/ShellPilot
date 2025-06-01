@@ -1,0 +1,2127 @@
+Host,CIS Reference,Control Name,Executed_Command,Terminal_Output,Keywords,Complaint Status,Scan Date
+192.168.1.9,1.1.1,pwd: (Print Working Directory) Displays the full path of the current directory you are in.,pwd,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306452 [mfree,[m[1m  3197576 [mused,[m[1m   522136 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586032 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.87 java        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.42 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.95 wazuh-db    [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.91 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K[H[mtop - 14:14:50 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306452 [mfree,[m[1m  3197492 [mused,[m[1m   522220 [mbuff/cache[m[m[K
+
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.0 61.4  10:11.90 java        [m[K
+[m    8 root      20   0       0      0      0 I   0.3  0.0   0:08.92 rcu_sched   [m[K
+[m 3943 wazuh-d+  20   0 1040856 154256  13984 S   0.3  3.8   1:24.89 node        [m[K
+[m 4218 root       0 -20       0      0      0 I   0.3  0.0   0:25.68 kworker/3:+ [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.96 wazuh-db    [m[K
+[m10195 root      20   0  530136   5652   3456 S   0.3  0.1   0:05.02 wazuh-logc+ [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.09 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K[H[mtop - 14:14:53 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+Tasks:[m[1m 117 [mtotal,[m[1m   2 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306328 [mfree,[m[1m  3197616 [mused,[m[1m   522220 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585908 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.92 java        [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.77 xfsaild/sd+ [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.43 python3     [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.10 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m[1m    8 root      20   0       0      0      0 R   0.0  0.0   0:08.92 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:14:56 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+Tasks:[m[1m 117 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.5 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.3 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306080 [mfree,[m[1m  3197780 [mused,[m[1m   522304 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585660 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.7 61.4  10:11.97 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 154520  13984 S   0.3  3.8   1:24.90 node        [m[K
+[m 9364 root      20   0  130680   2060    496 S   0.3  0.1   0:37.57 wazuh-authd [m[K
+[m10195 root      20   0  530136   5652   3456 S   0.3  0.1   0:05.03 wazuh-logc+ [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.41 kworker/3:1 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.92 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K","""/home/wazuh-user""",Non-Compliant,01/06/25 20:08:50
+192.168.1.9,1.1.2,whoami: Shows the effective username of the current user.,whoami,wazuh-user,"""wazuh-user""",Compliant,01/06/25 20:08:50
+192.168.1.9,1.1.3,"top: Provides a dynamic, real-time view of running processes, including CPU and memory usage.",top,"[?1h=[H[J[mtop - 14:12:59 up  8:31,  1 user,  load average: 0.21, 0.06, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  3.0 [msy,[m[1m  0.0 [mni,[m[1m 97.0 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   307444 [mfree,[m[1m  3197084 [mused,[m[1m   521636 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586924 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.88 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.03 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K
+[m   18 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/1:+ [m[K
+[m   19 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/2     [m[K
+[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:00.21 watchdog/2  [m[K[H[mtop - 14:13:02 up  8:31,  1 user,  load average: 0.19, 0.06, 0.01[m[m[K
+
+%Cpu(s):[m[1m  1.3 [mus,[m[1m  1.6 [msy,[m[1m  0.0 [mni,[m[1m 96.9 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306328 [mfree,[m[1m  3198104 [mused,[m[1m   521732 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585816 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165780   2.4g  12096 S   5.0 61.4  10:10.58 java        [m[K
+[m10195 root      20   0  530136   5652   3456 S   1.0  0.1   0:05.01 wazuh-logc+ [m[K
+[m 3943 wazuh-d+  20   0 1039320 154140  13984 S   0.7  3.8   1:24.60 node        [m[K
+[m 5753 root      20   0 1368004  23048  15200 S   0.7  0.6   0:05.90 filebeat    [m[K
+[m   10 root      rt   0       0      0      0 S   0.3  0.0   0:00.04 migration/0 [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.69 xfsaild/sd+ [m[K
+[m 9941 wazuh     20   0 1441800  29708      0 S   0.3  0.7   0:07.59 wazuh-anal+ [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.29 kworker/3:1 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.88 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K[H[mtop - 14:13:05 up  8:31,  1 user,  load average: 0.19, 0.06, 0.01[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   2 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306204 [mfree,[m[1m  3198144 [mused,[m[1m   521816 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585692 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165780   2.4g  12096 S   1.3 61.4  10:10.62 java        [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.7  0.4   0:36.83 wazuh-db    [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.24 python3     [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m[1m    8 root      20   0       0      0      0 R   0.0  0.0   0:08.88 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K[H[mtop - 14:13:08 up  8:31,  1 user,  load average: 0.18, 0.06, 0.01[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306204 [mfree,[m[1m  3198088 [mused,[m[1m   521872 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585748 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   2.7 61.4  10:10.70 java        [m[K
+[m 2487 root       0 -20       0      0      0 I   0.3  0.0   0:19.98 kworker/1:+ [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.30 kworker/3:1 [m[K","""rhythm""",Non-Compliant,01/06/25 20:08:50
+192.168.1.9,1.1.9,"uname -a: (Unix Name) Prints all system information, including kernel name, network nodename, kernel release, kernel version, machine hardware name, operating system, and more.",uname -a,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,1.6.14,hostname: Displays the system's hostname.,hostname,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306204 [mfree,[m[1m  3197820 [mused,[m[1m   522140 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585756 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.4 61.4  10:10.92 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 154060  13984 S   0.6  3.8   1:24.69 node        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.2  2.7   1:13.27 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.1  0.4   0:36.85 wazuh-db    [m[K
+[m 9941 wazuh     20   0 1441800  29708      0 S   0.1  0.7   0:07.61 wazuh-anal+ [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.1  0.1   0:21.85 wazuh-remo+ [m[K
+[m22997 root      20   0       0      0      0 I   0.1  0.0   0:03.32 kworker/3:1 [m[K
+[m    8 root      20   0       0      0      0 I   0.1  0.0   0:08.89 rcu_sched   [m[K
+[m 2509 root      20   0       0      0      0 S   0.1  0.0   0:18.70 xfsaild/sd+ [m[K
+[m 4218 root       0 -20       0      0      0 I   0.1  0.0   0:25.67 kworker/3:+ [m[K
+[m 5753 root      20   0 1368004  23048  15200 S   0.1  0.6   0:05.91 filebeat    [m[K
+[m10562 root      20   0 1321028 242832  14912 S   0.1  6.0  41:50.35 wazuh-modu+ [m[K
+[m22273 root      20   0       0      0      0 I   0.1  0.0   0:02.01 kworker/0:2 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K[H[mtop - 14:13:27 up  8:31,  1 user,  load average: 0.13, 0.06, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305956 [mfree,[m[1m  3197980 [mused,[m[1m   522228 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585512 [mavail Mem [m[m[K
+[K
+
+[m 2470 root       0 -20       0      0      0 I   0.3  0.0   0:24.94 kworker/2:+ [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.71 xfsaild/sd+ [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.3 61.4  10:10.93 java        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.28 python3     [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:13:30 up  8:31,  1 user,  load average: 0.13, 0.06, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.3 61.4  10:10.97 java        [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.04 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K
+[m   18 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/1:+ [m[K[H[mtop - 14:13:33 up  8:31,  1 user,  load average: 0.20, 0.07, 0.02[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305708 [mfree,[m[1m  3198140 [mused,[m[1m   522316 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585264 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:10.99 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 154324  13984 S   0.3  3.8   1:24.70 node        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.29 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.86 wazuh-db    [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.3  0.1   0:21.86 wazuh-remo+ [m[K
+[m10562 root      20   0 1321028 242832  14912 S   0.3  6.0  41:50.36 wazuh-modu+ [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,1.1.7,ps: (Process Status) Reports a snapshot of the current processes.,ps,"%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305584 [mfree,[m[1m  3198176 [mused,[m[1m   522404 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585140 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.7 61.4  10:11.04 java        [m[K
+[m22997 root      20   0       0      0      0 I   0.7  0.0   0:03.34 kworker/3:1 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K
+[m   18 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/1:+ [m[K[H[mtop - 14:13:38 up  8:31,  1 user,  load average: 0.18, 0.07, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   2 [mrunning,[m[1m  67 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305336 [mfree,[m[1m  3198336 [mused,[m[1m   522492 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   584892 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.3 61.4  10:11.08 java        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.30 python3     [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.05 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K[H[mtop - 14:13:41 up  8:31,  1 user,  load average: 0.17, 0.07, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   2 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.0 61.4  10:11.11 java        [m[K
+[m 2470 root       0 -20       0      0      0 I   0.3  0.0   0:24.95 kworker/2:+ [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.72 xfsaild/sd+ [m[K
+[m 3943 wazuh-d+  20   0 1040856 154588  13984 S   0.3  3.8   1:24.71 node        [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.3  0.1   0:21.87 wazuh-remo+ [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.06 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m[1m    8 root      20   0       0      0      0 R   0.0  0.0   0:08.89 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K[H[mtop - 14:13:44 up  8:32,  1 user,  load average: 0.17, 0.07, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305088 [mfree,[m[1m  3198492 [mused,[m[1m   522584 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   584644 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.7 61.4  10:11.16 java        [m[K
+[m    8 root      20   0       0      0      0 I   0.3  0.0   0:08.90 rcu_sched   [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.31 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.87 wazuh-db    [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,who: Shows who is logged on to the system.,who,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.0 [msy,[m[1m  0.1 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305956 [mfree,[m[1m  3197616 [mused,[m[1m   522592 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585516 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     [m[K
+[m 3943 wazuh-d+  20   0 1040856 153952  13984 S   0.7  3.8   1:24.73 node        [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.3 61.4  10:11.17 java        [m[K
+[m 9364 root      20   0  130680   2060    496 S   0.3  0.1   0:37.55 wazuh-authd [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.88 wazuh-db    [m[K
+[m10011 root      30  10  359168   6520   2332 S   0.3  0.2   0:19.45 wazuh-sysc+ [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K[H[mtop - 14:13:50 up  8:32,  1 user,  load average: 0.15, 0.07, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   3 [mrunning,[m[1m  66 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.8 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 98.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305832 [mfree,[m[1m  3197652 [mused,[m[1m   522680 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585392 [mavail Mem [m[m[K
+[K
+
+[m[1m 3943 wazuh-d+  20   0 1040856 153952  13984 R   2.3  3.8   1:24.80 node        [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   2.0 61.4  10:11.23 java        [m[K
+[m22997 root      20   0       0      0      0 I   0.7  0.0   0:03.36 kworker/3:1 [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.32 python3     [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:13:53 up  8:32,  1 user,  load average: 0.14, 0.07, 0.02[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585400 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.0 61.4  10:11.26 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 153952  13984 S   0.3  3.8   1:24.81 node        [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.89 wazuh-db    [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K[H[mtop - 14:13:56 up  8:32,  1 user,  load average: 0.13, 0.06, 0.02[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305708 [mfree,[m[1m  3197688 [mused,[m[1m   522768 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585276 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.0 61.4  10:11.29 java        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.33 python3     [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,uptime: Tells how long the system has been running and the number of users logged in.,uptime,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,"netstat -plrn: (Network Statistics) Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. The options -p shows the PID/Program name, -l shows listening sockets, -r shows the routing table, and -n shows numerical addresses instead of resolving hostnames.",netstat -plnt,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306552 [mfree,[m[1m  3198092 [mused,[m[1m   521520 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586128 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.3 61.4  10:11.49 java        [m[K
+[m 3943 wazuh-d+  20   0 1039320 153824  13984 S   0.2  3.8   1:24.84 node        [m[K
+[m 2509 root      20   0       0      0      0 S   0.1  0.0   0:18.74 xfsaild/sd+ [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.1  2.7   1:13.35 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.1  0.4   0:36.91 wazuh-db    [m[K
+[m 2470 root       0 -20       0      0      0 I   0.1  0.0   0:24.96 kworker/2:+ [m[K
+[m 5753 root      20   0 1368004  23048  15200 S   0.1  0.6   0:05.92 filebeat    [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.1  0.1   0:21.88 wazuh-remo+ [m[K
+[m22997 root      20   0       0      0      0 I   0.1  0.0   0:03.37 kworker/3:1 [m[K
+[m23257 root      20   0       0      0      0 I   0.1  0.0   0:00.01 kworker/2:0 [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.1  0.1   0:00.07 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K[H[mtop - 14:14:14 up  8:32,  1 user,  load average: 0.10, 0.06, 0.01[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   2 [mrunning,[m[1m  67 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306700 [mfree,[m[1m  3197852 [mused,[m[1m   521612 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586280 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.3 61.4  10:11.53 java        [m[K
+[m   20 root      rt   0       0      0      0 S   0.3  0.0   0:00.22 watchdog/2  [m[K
+[m 3927 chrony    20   0  118132   1140    716 S   0.3  0.0   0:01.59 chronyd     [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.36 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.92 wazuh-db    [m[K
+[m10011 root      30  10  359168   6520   2332 S   0.3  0.2   0:19.46 wazuh-sysc+ [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.3  0.1   0:21.89 wazuh-remo+ [m[K
+[m10235 wazuh     20   0   40228   1372      0 S   0.3  0.0   0:01.80 wazuh-moni+ [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.38 kworker/3:1 [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.08 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K[H[mtop - 14:14:17 up  8:32,  1 user,  load average: 0.09, 0.06, 0.01[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306576 [mfree,[m[1m  3197976 [mused,[m[1m   521612 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586156 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.55 java        [m[K
+[m 9856 root      20   0   40260   1880    540 S   0.7  0.0   0:01.04 wazuh-execd [m[K
+[m 2399 root      20   0       0      0      0 I   0.3  0.0   0:02.32 kworker/u8+ [m[K
+[m23270 wazuh-u+  20   0  150636   4448   3116 S   0.3  0.1   0:00.01 sshd        [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.90 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:14:20 up  8:32,  1 user,  load average: 0.09, 0.06, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306452 [mfree,[m[1m  3198012 [mused,[m[1m   521700 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586032 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.57 java        [m[K
+[m 3943 wazuh-d+  20   0 1039320 154088  13984 S   0.3  3.8   1:24.85 node        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.37 python3     [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,"sudo service: Used to manage system services (start, stop, restart, status). It requires superuser privileges (sudo).",sudo service --status-all,[6;1H[1mChange delay from 3.0 to [m[K,,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,"sudo ufw: (Uncomplicated Firewall) A command-line interface for managing the Netfilter firewall. Used with sudo, it allows enabling, disabling, and configuring firewall rules.",sudo ufw status,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305956 [mfree,[m[1m  3198240 [mused,[m[1m   521968 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585544 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     [m[K
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.1 61.4  10:11.74 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 154616  13984 S   0.1  3.8   1:24.87 node        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.1  2.7   1:13.39 python3     [m[K
+[m    8 root      20   0       0      0      0 I   0.1  0.0   0:08.91 rcu_sched   [m[K
+[m 2509 root      20   0       0      0      0 S   0.1  0.0   0:18.75 xfsaild/sd+ [m[K
+[m 9364 root      20   0  130680   2060    496 S   0.1  0.1   0:37.56 wazuh-authd [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.1  0.4   0:36.93 wazuh-db    [m[K
+[m 9941 wazuh     20   0 1441800  29708      0 S   0.1  0.7   0:07.62 wazuh-anal+ [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.1  0.1   0:21.90 wazuh-remo+ [m[K
+[m22997 root      20   0       0      0      0 I   0.1  0.0   0:03.39 kworker/3:1 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K[H[mtop - 14:14:38 up  8:32,  1 user,  load average: 0.06, 0.05, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.1 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   305832 [mfree,[m[1m  3198364 [mused,[m[1m   521968 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585420 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.3 61.4  10:11.78 java        [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.76 xfsaild/sd+ [m[K
+[m 5753 root      20   0 1368004  23048  15200 S   0.3  0.6   0:05.93 filebeat    [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.40 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.94 wazuh-db    [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.40 kworker/3:1 [m[K
+[m23270 wazuh-u+  20   0  150636   4448   3116 S   0.3  0.1   0:00.02 sshd        [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.91 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K[H[mtop - 14:14:41 up  8:32,  1 user,  load average: 0.06, 0.05, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306824 [mfree,[m[1m  3197284 [mused,[m[1m   522056 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586412 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.80 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 153992  13984 S   0.3  3.8   1:24.88 node        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.41 python3     [m[K
+[m10562 root      20   0 1321028 242832  14912 S   0.3  6.0  41:50.37 wazuh-modu+ [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.91 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:14:44 up  8:33,  1 user,  load average: 0.06, 0.05, 0.01[m[m[K
+Tasks:[m[1m 118 [mtotal,[m[1m   2 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306576 [mfree,[m[1m  3197532 [mused,[m[1m   522056 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586164 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.7 61.4  10:11.85 java        [m[K
+[m10159 wazuh     20   0  773528   2292    324 S   0.3  0.1   0:21.91 wazuh-remo+ [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.91 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.9,nan,nan,pwd,"Tasks:[m[1m 118 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306452 [mfree,[m[1m  3197576 [mused,[m[1m   522136 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   586032 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.87 java        [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.42 python3     [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.95 wazuh-db    [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.91 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K
+[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 [m[K[H[mtop - 14:14:50 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306452 [mfree,[m[1m  3197492 [mused,[m[1m   522220 [mbuff/cache[m[m[K
+
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.0 61.4  10:11.90 java        [m[K
+[m    8 root      20   0       0      0      0 I   0.3  0.0   0:08.92 rcu_sched   [m[K
+[m 3943 wazuh-d+  20   0 1040856 154256  13984 S   0.3  3.8   1:24.89 node        [m[K
+[m 4218 root       0 -20       0      0      0 I   0.3  0.0   0:25.68 kworker/3:+ [m[K
+[m 9594 wazuh     20   0  944600  17444      0 S   0.3  0.4   0:36.96 wazuh-db    [m[K
+[m10195 root      20   0  530136   5652   3456 S   0.3  0.1   0:05.02 wazuh-logc+ [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.09 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K[H[mtop - 14:14:53 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+Tasks:[m[1m 117 [mtotal,[m[1m   2 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306328 [mfree,[m[1m  3197616 [mused,[m[1m   522220 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585908 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   0.7 61.4  10:11.92 java        [m[K
+[m 2509 root      20   0       0      0      0 S   0.3  0.0   0:18.77 xfsaild/sd+ [m[K
+[m 9240 wazuh     20   0 1012120 107444  11580 S   0.3  2.7   1:13.43 python3     [m[K
+[m[1m23295 wazuh-u+  20   0  168936   4536   3876 R   0.3  0.1   0:00.10 top         [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m[1m    8 root      20   0       0      0      0 R   0.0  0.0   0:08.92 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/1  [m[K
+[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.07 migration/1 [m[K[H[mtop - 14:14:56 up  8:33,  1 user,  load average: 0.05, 0.05, 0.01[m[m[K
+Tasks:[m[1m 117 [mtotal,[m[1m   1 [mrunning,[m[1m  68 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.5 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.3 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m  4026164 [mtotal,[m[1m   306080 [mfree,[m[1m  3197780 [mused,[m[1m   522304 [mbuff/cache[m[m[K
+KiB Swap:[m[1m        0 [mtotal,[m[1m        0 [mfree,[m[1m        0 [mused.[m[1m   585660 [mavail Mem [m[m[K
+[K
+
+[m 5755 wazuh-i+  20   0 6165820   2.4g  12116 S   1.7 61.4  10:11.97 java        [m[K
+[m 3943 wazuh-d+  20   0 1040856 154520  13984 S   0.3  3.8   1:24.90 node        [m[K
+[m 9364 root      20   0  130680   2060    496 S   0.3  0.1   0:37.57 wazuh-authd [m[K
+[m10195 root      20   0  530136   5652   3456 S   0.3  0.1   0:05.03 wazuh-logc+ [m[K
+[m22997 root      20   0       0      0      0 I   0.3  0.0   0:03.41 kworker/3:1 [m[K
+[m    1 root      20   0   41584   3684   2208 S   0.0  0.1   0:02.34 systemd     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.09 kthreadd    [m[K
+[m    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ [m[K
+[m    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ [m[K
+[m    7 root      20   0       0      0      0 S   0.0  0.0   0:00.19 ksoftirqd/0 [m[K
+[m    8 root      20   0       0      0      0 I   0.0  0.0   0:08.92 rcu_sched   [m[K
+[m    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      [m[K
+[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.04 migration/0 [m[K
+[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.20 watchdog/0  [m[K
+[m   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0     [m[K
+[m   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     [m[K",,Keywords Not Set,01/06/25 20:08:50
+192.168.1.11,1.1.1,pwd: (Print Working Directory) Displays the full path of the current directory you are in.,pwd,"%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.5   0.1   0:00.39 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:38:44 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    840 root     -51   0       0      0      0 S   0.3   0.0   0:00.51 irq/78-+ [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.41 vmtoolsd [m[K
+[m   4442 root      20   0       0      0      0 I   0.3   0.0   0:00.08 kworker+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.40 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:38:47 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.42 vmtoolsd [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.41 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K[H[mtop - 10:38:51 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.42 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K","""/home/wazuh-user""",Non-Compliant,01/06/25 20:08:51
+192.168.1.11,1.1.2,whoami: Shows the effective username of the current user.,whoami,"[?2004l
+wazuh-user","""wazuh-user""",Compliant,01/06/25 20:08:51
+192.168.1.11,1.1.3,"top: Provides a dynamic, real-time view of running processes, including CPU and memory usage.",top,"[?2004l
+[?1h=[H[J[mtop - 10:37:01 up  9:23,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 306 [mtotal,[m[1m   1 [mrunning,[m[1m 305 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  5.1 [msy,[m[1m  0.0 [mni,[m[1m 93.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  1.3 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6109.2 [mfree,[m[1m    978.8 [mused,[m[1m    827.0 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6672.8 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m[1m   4499 wazuh-u+  20   0  226032   4224   3328 R   5.6   0.1   0:00.04 top      [m[K
+[m      1 root      20   0  174148  18644  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:37:04 up  9:23,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  226032   4224   3328 R   0.3   0.1   0:00.05 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 10:37:07 up  9:23,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6109.0 [mfree,[m[1m    979.0 [mused,[m[1m    827.0 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6672.5 [mavail Mem [m[m[K
+[K
+
+[m[1m   4499 wazuh-u+  20   0  226032   4224   3328 R   1.0   0.1   0:00.08 top      [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.7   0.1   1:15.22 vmtoolsd [m[K
+[m      1 root      20   0  174148  18644  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K[H[mtop - 10:37:10 up  9:23,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    924 chrony    20   0   84848   3876   3328 S   0.3   0.0   0:01.14 chronyd  [m[K
+[m   1484 gdm       20   0 3950436 189628 105848 S   0.3   2.4   0:16.79 gnome-s+ [m[K
+[m[1m   4499 wazuh-u+  20   0  226032   4224   3328 R   0.3   0.1   0:00.09 top      [m[K
+[m      1 root      20   0  174148  18644  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K","""rhythm""",Non-Compliant,01/06/25 20:08:51
+192.168.1.11,1.1.9,"uname -a: (Unix Name) Prints all system information, including kernel name, network nodename, kernel release, kernel version, machine hardware name, operating system, and more.",uname -a,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,1.6.14,hostname: Displays the system's hostname.,hostname,"Tasks:[m[1m 306 [mtotal,[m[1m   1 [mrunning,[m[1m 305 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6109.0 [mfree,[m[1m    979.0 [mused,[m[1m    827.0 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6672.5 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m   1484 gdm       20   0 3950436 189628 105848 S   0.4   2.4   0:16.85 gnome-s+ [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.2   0.1   1:15.25 vmtoolsd [m[K
+[m    486 root      20   0       0      0      0 I   0.1   0.0   0:01.51 kworker+ [m[K
+[m   2051 gdm       20   0  739220  28740  20996 S   0.1   0.4   0:00.49 gsd-pow+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.1   0.1   0:00.10 top      [m[K
+[m      1 root      20   0  174148  18644  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:37:27 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m   1484 gdm       20   0 3950436 189628 105848 S   0.7   2.4   0:16.87 gnome-s+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.12 top      [m[K
+[m    917 root      20   0   82904   4352   3968 S   0.3   0.1   0:02.46 irqbala+ [m[K
+[m      1 root      20   0  174148  18644  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:37:30 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 305 [mtotal,[m[1m   1 [mrunning,[m[1m 304 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6122.3 [mfree,[m[1m    965.6 [mused,[m[1m    827.0 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.9 [mavail Mem [m[m[K
+[K
+
+[m    932 root      20   0   22836  12476   9088 S   0.3   0.2   0:00.96 systemd+ [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.26 vmtoolsd [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.13 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 10:37:33 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6122.2 [mfree,[m[1m    965.8 [mused,[m[1m    826.9 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.7 [mavail Mem [m[m[K
+[K
+
+[m    688 root      20   0       0      0      0 S   0.3   0.0   0:01.70 xfsaild+ [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.27 vmtoolsd [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,1.1.7,ps: (Process Status) Reports a snapshot of the current processes.,ps,"%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   1.0   0.1   0:00.16 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:37:38 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.18 top      [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.28 vmtoolsd [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K[H[mtop - 10:37:41 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6121.9 [mfree,[m[1m    966.1 [mused,[m[1m    826.9 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.5 [mavail Mem [m[m[K
+[K
+
+[m   1083 root      20   0  476472  23108  18016 S   0.3   0.3   0:04.31 Network+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.19 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 10:37:44 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.29 vmtoolsd [m[K
+[m   4442 root      20   0       0      0      0 I   0.3   0.0   0:00.07 kworker+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.20 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,who: Shows who is logged on to the system.,who,"Tasks:[m[1m 305 [mtotal,[m[1m   1 [mrunning,[m[1m 304 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.3 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6121.9 [mfree,[m[1m    966.1 [mused,[m[1m    826.9 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.5 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.5   0.1   1:15.30 vmtoolsd [m[K
+[m   2019 gdm       20   0  813700  28536  20984 S   0.5   0.4   0:00.89 gsd-col+ [m[K
+[m   4470 wazuh-u+  20   0   20536   7020   5120 S   0.5   0.1   0:00.02 sshd     [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.5   0.1   0:00.21 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:37:49 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 305 [mtotal,[m[1m   2 [mrunning,[m[1m 303 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.23 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:37:52 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 305 [mtotal,[m[1m   1 [mrunning,[m[1m 304 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.25 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 10:37:55 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.31 vmtoolsd [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.26 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,uptime: Tells how long the system has been running and the number of users logged in.,uptime,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,"netstat -plrn: (Network Statistics) Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. The options -p shows the PID/Program name, -l shows listening sockets, -r shows the routing table, and -n shows numerical addresses instead of resolving hostnames.",netstat -plnt,"Tasks:[m[1m 305 [mtotal,[m[1m   1 [mrunning,[m[1m 304 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6121.9 [mfree,[m[1m    966.1 [mused,[m[1m    826.9 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.5 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.2   0.1   1:15.33 vmtoolsd [m[K
+[m    688 root      20   0       0      0      0 S   0.1   0.0   0:01.71 xfsaild+ [m[K
+[m   2031 gdm       20   0  603432  13628  10112 S   0.1   0.2   0:03.03 gsd-sma+ [m[K
+[m   4396 root      20   0       0      0      0 I   0.1   0.0   0:00.06 kworker+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.1   0.1   0:00.27 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:38:11 up  9:24,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.34 vmtoolsd [m[K
+[m   1484 gdm       20   0 3950436 189628 105848 S   0.3   2.4   0:16.88 gnome-s+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.28 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:38:14 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   1.0   0.1   0:00.31 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:38:17 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    924 chrony    20   0   84848   3876   3328 S   0.3   0.0   0:01.15 chronyd  [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.35 vmtoolsd [m[K
+[m   4452 root      20   0       0      0      0 I   0.3   0.0   0:00.01 kworker+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.32 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,"sudo service: Used to manage system services (start, stop, restart, status). It requires superuser privileges (sudo).",sudo service --status-all,[6;1H[1mChange delay from 3.0 to [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,"sudo ufw: (Uncomplicated Firewall) A command-line interface for managing the Netfilter firewall. Used with sudo, it allows enabling, disabling, and configuring firewall rules.",sudo ufw status,"Tasks:[m[1m 305 [mtotal,[m[1m   1 [mrunning,[m[1m 304 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   7651.5 [mtotal,[m[1m   6121.9 [mfree,[m[1m    966.1 [mused,[m[1m    826.9 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   3584.0 [mtotal,[m[1m   3584.0 [mfree,[m[1m      0.0 [mused.[m[1m   6685.5 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.2   0.1   1:15.37 vmtoolsd [m[K
+[m    688 root      20   0       0      0      0 S   0.1   0.0   0:01.72 xfsaild+ [m[K
+[m   1365 root      20   0  164996   9356   6156 S   0.1   0.1   0:03.69 rsyslogd [m[K
+[m   4063 root      20   0       0      0      0 I   0.1   0.0   0:00.32 kworker+ [m[K
+[m   4470 wazuh-u+  20   0   20536   7020   5120 S   0.1   0.1   0:00.03 sshd     [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.1   0.1   0:00.33 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K[H[mtop - 10:38:33 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.38 vmtoolsd [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.34 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K[H[mtop - 10:38:36 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.36 top      [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.39 vmtoolsd [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 10:38:39 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.7   0.1   0:00.38 top      [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.11,nan,nan,pwd,"%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.5   0.1   0:00.39 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:01.96 rcu_pre+ [m[K[H[mtop - 10:38:44 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    840 root     -51   0       0      0      0 S   0.3   0.0   0:00.51 irq/78-+ [m[K
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.41 vmtoolsd [m[K
+[m   4442 root      20   0       0      0      0 I   0.3   0.0   0:00.08 kworker+ [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.40 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 10:38:47 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    939 root      20   0  457520  10880   7296 S   0.3   0.1   1:15.42 vmtoolsd [m[K
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.41 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K[H[mtop - 10:38:51 up  9:25,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4499 wazuh-u+  20   0  235484   7168   5760 R   0.3   0.1   0:00.42 top      [m[K
+[m      1 root      20   0  174148  16876  10872 S   0.0   0.2   0:06.73 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.22 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.09 ksoftir+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,1.1.1,pwd: (Print Working Directory) Displays the full path of the current directory you are in.,pwd,"%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   1.0   0.2   0:00.32 top      [m[K
+[m     17 root      20   0       0      0      0 I   0.5   0.0   0:02.53 rcu_pre+ [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[H[mtop - 20:08:45 up  8:17,  1 user,  load average: 0.03, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.19 vmtoolsd [m[K
+[m   1390 wazuh     20   0  173208   9468   6016 S   0.3   0.3   0:06.04 wazuh-a+ [m[K
+[m   4242 root      20   0       0      0      0 I   0.3   0.0   0:01.00 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.33 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:08:48 up  8:17,  1 user,  load average: 0.02, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.7 [msy,[m[1m  0.0 [mni,[m[1m 98.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.4 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2261.8 [mfree,[m[1m    965.8 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2660.2 [mavail Mem [m[m[K
+[K
+
+[m    596 root      20   0       0      0      0 S   0.3   0.0   0:13.56 xfsaild+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.34 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.53 rcu_pre+ [m[K[H[mtop - 20:08:51 up  8:17,  1 user,  load average: 0.02, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.20 vmtoolsd [m[K
+[m   4487 root      20   0       0      0      0 I   0.3   0.0   0:00.05 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.35 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K","""/home/wazuh-user""",Non-Compliant,01/06/25 20:08:51
+192.168.1.8,1.1.2,whoami: Shows the effective username of the current user.,whoami,"[?2004l
+wazuh-user","""wazuh-user""",Compliant,01/06/25 20:08:51
+192.168.1.8,1.1.3,"top: Provides a dynamic, real-time view of running processes, including CPU and memory usage.",top,"[?2004l
+[?1h=[H[J[mtop - 20:07:01 up  8:15,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  1.2 [mus,[m[1m  5.0 [msy,[m[1m  0.0 [mni,[m[1m 91.2 [mid,[m[1m  0.0 [mwa,[m[1m  1.2 [mhi,[m[1m  1.2 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2260.1 [mfree,[m[1m    967.5 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2658.5 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m[1m   4510 wazuh-u+  20   0  226040   4096   3328 R  11.1   0.1   0:00.04 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.51 rcu_pre+ [m[K
+[m     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.26 migrati+ [m[K[H[mtop - 20:07:04 up  8:15,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m   1058 root      20   0  223948   3456   2688 S   0.3   0.1   0:00.11 crond    [m[K
+[m[1m   4510 wazuh-u+  20   0  226040   4096   3328 R   0.3   0.1   0:00.05 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.51 rcu_pre+ [m[K[H[mtop - 20:07:07 up  8:15,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2259.9 [mfree,[m[1m    967.7 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2658.3 [mavail Mem [m[m[K
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.7   0.2   1:04.01 vmtoolsd [m[K
+[m   1390 wazuh     20   0  173208   9468   6016 S   0.3   0.3   0:06.02 wazuh-a+ [m[K
+[m   2346 root      20   0       0      0      0 I   0.3   0.0   0:01.04 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  226040   4096   3328 R   0.3   0.1   0:00.06 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:07:10 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.02 vmtoolsd [m[K
+[m   1156 gdm       20   0 4515064 241960 121756 S   0.3   6.5   0:18.64 gnome-s+ [m[K
+[m[1m   4510 wazuh-u+  20   0  226040   4096   3328 R   0.3   0.1   0:00.07 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K","""rhythm""",Non-Compliant,01/06/25 20:08:51
+192.168.1.8,1.1.9,"uname -a: (Unix Name) Prints all system information, including kernel name, network nodename, kernel release, kernel version, machine hardware name, operating system, and more.",uname -a,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,1.6.14,hostname: Displays the system's hostname.,hostname,"Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.2 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.3 [mid,[m[1m  0.0 [mwa,[m[1m  0.3 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2259.1 [mfree,[m[1m    968.4 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2657.6 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m   1156 gdm       20   0 4519224 241960 121756 S   1.3   6.5   0:18.82 gnome-s+ [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.1   0.2   1:04.04 vmtoolsd [m[K
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.1   0.2   0:00.09 top      [m[K
+[m     17 root      20   0       0      0      0 I   0.1   0.0   0:02.52 rcu_pre+ [m[K
+[m     24 root      rt   0       0      0      0 S   0.1   0.0   0:01.97 migrati+ [m[K
+[m    596 root      20   0       0      0      0 S   0.1   0.0   0:13.52 xfsaild+ [m[K
+[m   1148 gdm       20   0  874016  20124  15488 S   0.1   0.5   0:00.41 gnome-s+ [m[K
+[m   4446 root      20   0       0      0      0 I   0.1   0.0   0:00.07 kworker+ [m[K
+[m   4487 root      20   0       0      0      0 I   0.1   0.0   0:00.01 kworker+ [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K[H[mtop - 20:07:27 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.05 vmtoolsd [m[K
+[m   1861 root      20   0  481624  12656   8320 S   0.3   0.3   0:07.06 wazuh-l+ [m[K
+[m   4401 root      20   0       0      0      0 I   0.3   0.0   0:00.29 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.3   0.2   0:00.10 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.60 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:07:30 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 241 [mtotal,[m[1m   2 [mrunning,[m[1m 239 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.8 [mfree,[m[1m    963.8 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2662.2 [mavail Mem [m[m[K
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.7   0.2   0:00.12 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.3   0.4   0:05.61 systemd  [m[K
+[m     12 root      20   0       0      0      0 I   0.3   0.0   0:00.12 kworker+ [m[K
+[m     56 root      20   0       0      0      0 S   0.3   0.0   0:01.30 kcompac+ [m[K
+[m    833 polkitd   20   0 2714724  27008  19404 S   0.3   0.7   0:01.08 polkitd  [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.06 vmtoolsd [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+
+
+[H[mtop - 20:07:33 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.5 [mfree,[m[1m    964.1 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2661.9 [mavail Mem [m[m[K
+[K
+
+[m   1359 root      20   0   25240   5428   2176 S   0.3   0.1   0:01.98 wazuh-e+ [m[K
+[m   4242 root      20   0       0      0      0 I   0.3   0.0   0:00.98 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.3   0.2   0:00.13 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,1.1.7,ps: (Process Status) Reports a snapshot of the current processes.,ps,"%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.3 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.5   0.2   1:04.07 vmtoolsd [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.52 rcu_pre+ [m[K
+[m     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.26 migrati+ [m[K[H[mtop - 20:07:38 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.3 [mfree,[m[1m    964.3 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2661.7 [mavail Mem [m[m[K
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.7   0.2   0:00.15 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 20:07:41 up  8:16,  1 user,  load average: 0.00, 0.00, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.3   0.2   0:00.16 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 20:07:44 up  8:16,  1 user,  load average: 0.08, 0.02, 0.01[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.08 vmtoolsd [m[K
+[m   1156 gdm       20   0 4519224 241960 121756 S   0.3   6.5   0:18.83 gnome-s+ [m[K
+[m   4487 root      20   0       0      0      0 I   0.3   0.0   0:00.02 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.3   0.2   0:00.17 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,who: Shows who is logged on to the system.,who,"Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.3 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.3 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.3 [mfree,[m[1m    964.3 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2661.7 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    596 root      20   0       0      0      0 S   0.5   0.0   0:13.53 xfsaild+ [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.5   0.2   1:04.09 vmtoolsd [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.52 rcu_pre+ [m[K[H[mtop - 20:07:49 up  8:16,  1 user,  load average: 0.07, 0.02, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.7   0.2   0:00.19 top      [m[K
+[m   4481 wazuh-u+  20   0   20552   6908   4992 S   0.3   0.2   0:00.02 sshd     [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 20:07:52 up  8:16,  1 user,  load average: 0.07, 0.02, 0.00[m[m[K
+
+
+
+
+[K
+
+[m   4446 root      20   0       0      0      0 I   0.3   0.0   0:00.08 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.3   0.2   0:00.20 top      [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 20:07:55 up  8:16,  1 user,  load average: 0.07, 0.02, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235352   7168   5760 R   0.7   0.2   0:00.22 top      [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,uptime: Tells how long the system has been running and the number of users logged in.,uptime,[6;1H[1mWhich user (blank for all) [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,"netstat -plrn: (Network Statistics) Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. The options -p shows the PID/Program name, -l shows listening sockets, -r shows the routing table, and -n shows numerical addresses instead of resolving hostnames.",netstat -plnt,"Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.3 [mfree,[m[1m    964.3 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2661.7 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.2   0.2   1:04.13 vmtoolsd [m[K
+[m   1015 root      20   0  476484  22876  17896 S   0.1   0.6   0:05.16 Network+ [m[K
+[m   3211 root      20   0       0      0      0 I   0.1   0.0   0:00.47 kworker+ [m[K
+[m   4242 root      20   0       0      0      0 I   0.1   0.0   0:00.99 kworker+ [m[K
+[m   4487 root      20   0       0      0      0 I   0.1   0.0   0:00.03 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.1   0.2   0:00.23 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:08:12 up  8:17,  1 user,  load average: 0.05, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    596 root      20   0       0      0      0 S   0.3   0.0   0:13.54 xfsaild+ [m[K
+[m   1156 gdm       20   0 4515064 241960 121756 S   0.3   6.5   0:18.84 gnome-s+ [m[K
+[m   1390 wazuh     20   0  173208   9468   6016 S   0.3   0.3   0:06.03 wazuh-a+ [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K[H[mtop - 20:08:15 up  8:17,  1 user,  load average: 0.05, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.7   0.2   0:00.25 top      [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.14 vmtoolsd [m[K
+[m   1861 root      20   0  481624  12656   8320 S   0.3   0.3   0:07.07 wazuh-l+ [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 20:08:18 up  8:17,  1 user,  load average: 0.04, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.26 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.52 rcu_pre+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,"sudo service: Used to manage system services (start, stop, restart, status). It requires superuser privileges (sudo).",sudo service --status-all,[6;1H[1mChange delay from 3.0 to [m[K,,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,"sudo ufw: (Uncomplicated Firewall) A command-line interface for managing the Netfilter firewall. Used with sudo, it allows enabling, disabling, and configuring firewall rules.",sudo ufw status,"Tasks:[m[1m 241 [mtotal,[m[1m   1 [mrunning,[m[1m 240 [msleeping,[m[1m   0 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2263.3 [mfree,[m[1m    964.3 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2661.7 [mavail Mem [m[m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  [m[K
+[m    852 root      20   0  457456   8700   7292 S   0.2   0.2   1:04.17 vmtoolsd [m[K
+[m    596 root      20   0       0      0      0 S   0.1   0.0   0:13.55 xfsaild+ [m[K
+[m   4487 root      20   0       0      0      0 I   0.1   0.0   0:00.04 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.1   0.2   0:00.27 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:08:34 up  8:17,  1 user,  load average: 0.03, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.4 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.28 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.52 rcu_pre+ [m[K
+[m     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.26 migrati+ [m[K[H[mtop - 20:08:37 up  8:17,  1 user,  load average: 0.03, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.18 vmtoolsd [m[K
+[m   4446 root      20   0       0      0      0 I   0.3   0.0   0:00.09 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.29 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K[H[mtop - 20:08:40 up  8:17,  1 user,  load average: 0.03, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.6 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.30 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.52 rcu_pre+ [m[K",,Keywords Not Set,01/06/25 20:08:51
+192.168.1.8,nan,nan,pwd,"%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.7 [mid,[m[1m  0.0 [mwa,[m[1m  0.1 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   1.0   0.2   0:00.32 top      [m[K
+[m     17 root      20   0       0      0      0 I   0.5   0.0   0:02.53 rcu_pre+ [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[H[mtop - 20:08:45 up  8:17,  1 user,  load average: 0.03, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.2 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.1 [mwa,[m[1m  0.2 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.19 vmtoolsd [m[K
+[m   1390 wazuh     20   0  173208   9468   6016 S   0.3   0.3   0:06.04 wazuh-a+ [m[K
+[m   4242 root      20   0       0      0      0 I   0.3   0.0   0:01.00 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.33 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K[H[mtop - 20:08:48 up  8:17,  1 user,  load average: 0.02, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.7 [msy,[m[1m  0.0 [mni,[m[1m 98.8 [mid,[m[1m  0.0 [mwa,[m[1m  0.4 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+MiB Mem :[m[1m   3626.0 [mtotal,[m[1m   2261.8 [mfree,[m[1m    965.8 [mused,[m[1m    649.7 [mbuff/cache[m[m[K
+MiB Swap:[m[1m   2460.0 [mtotal,[m[1m   2460.0 [mfree,[m[1m      0.0 [mused.[m[1m   2660.2 [mavail Mem [m[m[K
+[K
+
+[m    596 root      20   0       0      0      0 S   0.3   0.0   0:13.56 xfsaild+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.34 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ [m[K
+[m     17 root      20   0       0      0      0 I   0.0   0.0   0:02.53 rcu_pre+ [m[K[H[mtop - 20:08:51 up  8:17,  1 user,  load average: 0.02, 0.01, 0.00[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.5 [mid,[m[1m  0.0 [mwa,[m[1m  0.2 [mhi,[m[1m  0.1 [msi,[m[1m  0.0 [mst[m[m[K
+
+
+[K
+
+[m    852 root      20   0  457456   8700   7292 S   0.3   0.2   1:04.20 vmtoolsd [m[K
+[m   4487 root      20   0       0      0      0 I   0.3   0.0   0:00.05 kworker+ [m[K
+[m[1m   4510 wazuh-u+  20   0  235516   7168   5760 R   0.3   0.2   0:00.35 top      [m[K
+[m      1 root      20   0  174056  16312  10688 S   0.0   0.4   0:05.61 systemd  [m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.12 kthreadd [m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+ [m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     10 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ [m[K
+[m     12 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker+ [m[K
+[m     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K
+[m     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ [m[K",,Keywords Not Set,01/06/25 20:08:51

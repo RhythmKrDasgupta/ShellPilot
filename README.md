@@ -1,6 +1,9 @@
 ## ShellPilot User Guide
 
 * * *
+![ShellPilot User Interface](ShellPilotGUI.gif)
+
+
 
 ### Overview
 
