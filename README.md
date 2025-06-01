@@ -21,20 +21,9 @@ ShellPilot simplifies complex SSH automation, giving you unparalleled control an
 
 * * *
 
-### Table of Contents
+### ShellPilot UI
 
-* *   [Getting Started](https://www.google.com/search?q=%23getting-started)
-* *   [User Interface Overview](https://www.google.com/search?q=%23user-interface-overview)
-* *   [Profile Management](https://www.google.com/search?q=%23profile-management)
-* *   [Input Configuration](https://www.google.com/search?q=%23input-configuration)* *   [Host Inventory File](https://www.google.com/search?q=%23host-inventory-file)
-*     * *   [SSH Credential File](https://www.google.com/search?q=%23ssh-credential-file)
-*     * *   [Command List File](https://www.google.com/search?q=%23command-list-file)
-* *   [Execution Control](https://www.google.com/search?q=%23execution-control)
-* *   [Viewing Output](https://www.google.com/search?q=%23viewing-output)
-* *   [Debug Logging](https://www.google.com/search?q=%23debug-logging)
-* *   [Saving and Loading Profiles](https://www.google.com/search?q=%23saving-and-loading-profiles)
-* *   [Troubleshooting](https://www.google.com/search?q=%23troubleshooting)
-* *   [Contact and Support](https://www.google.com/search?q=%23contact-and-support)
+![ShellPilot User Interface](ShellPilot_User_Interface 2.gif)
 
 * * *
 
