@@ -113,7 +113,7 @@ uptime
 * * *
 ### CISCO IOS 17 SCD Control
 
-![ShellPilot User Interface](images/CISCO_Router_IOS _17_Control.gif)
+![ShellPilot User Interface](images/CISCO_Router_IOS_17_Control.gif)
 
 ### Execution Control
 
@@ -127,6 +127,11 @@ Ready to automate?
 ### Viewing Output
 
 Once commands are executed, their output is neatly organized for you in the "**Job Output**" section. To see the specific results for a host, just select it from the "**Host Status**" tree view.
+
+* * *
+### CISCO IOS 17 Compliance
+
+![ShellPilot User Interface](images/CISCO_Compliance_Report.gif)
 
 * * *
 
