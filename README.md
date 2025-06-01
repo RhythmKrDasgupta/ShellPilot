@@ -23,7 +23,7 @@ ShellPilot simplifies complex SSH automation, giving you unparalleled control an
 
 ### ShellPilot UI
 
-![ShellPilot User Interface](ShellPilotGUI.png)
+![ShellPilot User Interface](ShellPilotGUI.gif)
 
 * * *
 
@@ -59,6 +59,7 @@ ShellPilot makes managing your configurations a breeze!
 * *   **Deleting a Profile**: Choose the profile you wish to remove and click "**Delete Profile**" to clear it from your list.
 
 * * *
+![ShellPilot User Interface](ShellPilot_Profile.gif)
 
 ### Input Configuration
 
