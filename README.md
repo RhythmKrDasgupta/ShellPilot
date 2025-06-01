@@ -1,145 +1,181 @@
-ShellPilot User Guide
-=====================
+## ShellPilot User Guide
 
-Overview
---------
+* * *
 
-ShellPilot is a robust and user-friendly GUI application designed to streamline the automation of SSH command execution across multiple remote hosts. Built with a focus on efficiency and ease of use, it empowers system administrators, network engineers, and IT professionals to perform bulk operations effortlessly, eliminating the need for repetitive manual tasks.
+### Overview
 
-Key features include:
+ShellPilot is your go-to GUI application for effortlessly automating SSH command execution across multiple remote hosts. Designed with precision and ease of use in mind, it's perfect for system administrators, network engineers, and IT professionals who want to tackle bulk operations without the hassle of repetitive manual tasks.
 
-* **Multi-host Management:** Manage and execute commands on a large number of servers using inventory files, accelerating administrative workflows.
-* **Credential Handling:** Securely manage SSH credentials through dedicated credential files to ensure seamless authentication across hosts.
-* **Concurrent Execution:** Leverages multi-threading capabilities to run commands simultaneously on multiple hosts, significantly reducing execution time.
-* **Job Output and Reporting:** Collate and display command output per host, with options to generate detailed CSV or text reports for compliance and auditing.
-* **Debug and Logging:** Enable debug logging for enhanced transparency and troubleshooting.
-* **Intuitive Profile Management:** Save and reuse your configuration profiles for consistency and efficiency across sessions.
+ShellPilot simplifies complex SSH automation, giving you unparalleled control and visibility over your infrastructure right from a central application.
 
-With its modern interface and comprehensive functionality, ShellPilot simplifies complex SSH automation tasks, helping you maintain control and visibility over your infrastructure from a central application.
+* * *
 
-![SSH terminal automation](ShellPilot_User_Interface.gif "SSH Automation Image")
+### Key Features
 
-Table of Contents
------------------
+* *   **Multi-host Management:** Seamlessly manage and execute commands on a vast number of servers using **inventory files**, dramatically speeding up your administrative tasks.
+* *   **Credential Handling:** Securely manage SSH credentials with dedicated **credential files**, ensuring smooth authentication every time.
+* *   **Concurrent Execution:** Thanks to its multi-threading capabilities, ShellPilot can run commands **simultaneously** on multiple hosts, slashing execution time.
+* *   **Job Output and Reporting:** Easily collate and display command output for each host. Plus, generate detailed **CSV or text reports** for compliance and auditing.
+* *   **Debug and Logging:** Activate **debug logging** for crystal-clear transparency and efficient troubleshooting.
+* *   **Intuitive Profile Management:** **Save and reuse** your configuration profiles for consistent and efficient operations across all your sessions.
 
-* [Getting Started](#getting-started)
-* [User Interface Overview](#user-interface-overview)
-* [Profile Management](#profile-management)
-* [Input Configuration](#input-configuration)
-    * [Host Inventory File](#host-inventory-file)
-    * [SSH Credential File](#ssh-credential-file)
-    * [Command List File](#command-list-file)
-* [Execution Control](#execution-control)
-* [Viewing Output](#viewing-output)
-* [Debug Logging](#debug-logging)
-* [Saving and Loading Profiles](#saving-and-loading-profiles)
-* [Troubleshooting](#troubleshooting)
-* [Contact and Support](#contact-and-support)
+* * *
 
-Getting Started
----------------
+### Table of Contents
 
-* **Installation**: Download and install ShellPilot from the official repository or website.
-* **Launching the Application**: Open the ShellPilot application by double-clicking the executable file.
+* *   [Getting Started](https://www.google.com/search?q=%23getting-started)
+* *   [User Interface Overview](https://www.google.com/search?q=%23user-interface-overview)
+* *   [Profile Management](https://www.google.com/search?q=%23profile-management)
+* *   [Input Configuration](https://www.google.com/search?q=%23input-configuration)* *   [Host Inventory File](https://www.google.com/search?q=%23host-inventory-file)
+*     * *   [SSH Credential File](https://www.google.com/search?q=%23ssh-credential-file)
+*     * *   [Command List File](https://www.google.com/search?q=%23command-list-file)
+* *   [Execution Control](https://www.google.com/search?q=%23execution-control)
+* *   [Viewing Output](https://www.google.com/search?q=%23viewing-output)
+* *   [Debug Logging](https://www.google.com/search?q=%23debug-logging)
+* *   [Saving and Loading Profiles](https://www.google.com/search?q=%23saving-and-loading-profiles)
+* *   [Troubleshooting](https://www.google.com/search?q=%23troubleshooting)
+* *   [Contact and Support](https://www.google.com/search?q=%23contact-and-support)
 
-User Interface Overview
------------------------
+* * *
 
-The main window consists of several sections:
+### Getting Started
 
-* **Top Bar**: Contains the menu button and license status.
-* **Title Section**: Displays the application name, version, and developer information.
-* **Profile Management Section**: Allows users to select, create, edit, and delete profiles.
-* **Input Configuration Section**: Where users can specify input files and settings.
-* **Output Frames**: Displays the status of hosts and job output.
-* **Status and Progress**: Shows the current activity status and progress bar.
-* **Debug Console**: Displays debug logs if enabled.
+Ready to take control?
 
-Profile Management
-------------------
+* *   **Installation**: Head over to the official repository or website to **download and install ShellPilot**.
+* *   **Launching the Application**: Simply **double-click the executable file** to open ShellPilot and get started!
 
-* **Creating a New Profile**: Click the "New Profile" button and enter a name for the profile.
-* **Editing a Profile**: Select a profile from the dropdown and click "Edit Profile" to modify its settings.
-* **Deleting a Profile**: Select a profile and click "Delete Profile" to remove it from the list.
+* * *
 
-Input Configuration
--------------------
+### User Interface Overview
 
-### Host Inventory File
+ShellPilot's main window is intuitively laid out, featuring several key sections to guide you:
 
-* **Purpose**: Contains a list of hosts (IP addresses or hostnames).
-* **Format**: CSV file with a header row `Host_IP`.
-* **Selection**: Click "Browse" next to the "Host Inventory File" field to select the file.
+* *   **Top Bar**: Your access point for the **menu button** and **license status**.
+* *   **Title Section**: Displays the application's **name, version**, and **developer information**.
+* *   **Profile Management Section**: Where you can **select, create, edit, and delete your profiles**.
+* *   **Input Configuration Section**: This is where you'll **specify your input files and settings**.
+* *   **Output Frames**: Keep an eye on the **status of your hosts** and the **job output** here.
+* *   **Status and Progress**: See the **current activity status** and **progress bar** at a glance.
+* *   **Debug Console**: If enabled, your **debug logs** will appear here, offering enhanced transparency.
 
-Example:
+* * *
+
+### Profile Management
+
+ShellPilot makes managing your configurations a breeze!
+
+* *   **Creating a New Profile**: Click the "**New Profile**" button and give your new profile a descriptive name.
+* *   **Editing a Profile**: Select an existing profile from the dropdown and click "**Edit Profile**" to fine-tune its settings.
+* *   **Deleting a Profile**: Choose the profile you wish to remove and click "**Delete Profile**" to clear it from your list.
+
+* * *
+
+### Input Configuration
+
+ShellPilot relies on clearly formatted input files to do its magic. Here's what you need to know:
+
+#### Host Inventory File
+
+* *   **Purpose**: This file contains the complete list of hosts (either **IP addresses or hostnames**) where commands will be executed.
+* *   **Format**: A **CSV file** with a single header row: `Host_IP`.
+* *   **Selection**: Click "**Browse**" next to the "Host Inventory File" field to easily locate and select your file.
+
+**Example:**
+
+```
 Host_IP
 192.168.1.1
 192.168.1.2
 example.com
+```
 
-### SSH Credential File
+#### SSH Credential File
 
-* **Purpose**: Contains SSH credentials (username and password).
-* **Format**: CSV file with headers `username`, `password`, and optionally `port`.
-* **Selection**: Click "Browse" next to the "SSH Credential File" field to select the file.
+* *   **Purpose**: This file securely stores the **SSH usernames and passwords** needed for authentication. You can also specify the port.
+* *   **Format**: A **CSV file** with headers: `username`, `password`, and optionally `port`.
+* *   **Selection**: Click "**Browse**" next to the "SSH Credential File" field to select your credentials file.
 
-Example:
+**Example:**
+
+```
 username,password,port
 admin,password123,22
 user,securepass,22
+```
 
-### Command List File
+#### Command List File
 
-* **Purpose**: Contains commands to be executed on the hosts.
-* **Format**: CSV or text file with a header row `Control Command`.
-* **Selection**: Click "Browse" next to the "Command List File" field to select the file.
+* *   **Purpose**: This file lists all the **commands you want to execute** on your specified hosts.
+* *   **Format**: A **CSV or text file** with a header row: `Control Command`.
+* *   **Selection**: Click "**Browse**" next to the "Command List File" field to select your command file.
 
-Example:
+**Example:**
+
+```
 Control Command
 ls -l
 df -h
 uptime
+```
 
-Execution Control
------------------
+* * *
 
-* **Starting Execution**: Click the "Start Scan" button to begin executing commands on the specified hosts.
-* **Stopping Execution**: Click the "Stop Scan" button to halt the execution at any time.
+### Execution Control
 
-Viewing Output
---------------
+Ready to automate?
 
-The output of executed commands is displayed in the "Job Output" section. Select a host from the "Host Status" tree view to view specific output related to that host.
+* *   **Starting Execution**: Simply click the "**Start Scan**" button to kick off command execution on all your configured hosts.
+* *   **Stopping Execution**: Need to pause? Click the "**Stop Scan**" button at any time to halt the execution process.
 
-Debug Logging
--------------
+* * *
 
-* **Enabling Debug Logging**: Check the "Enable Debug Log" box to activate debug logging.
-* **Viewing Debug Logs**: The debug console will display logs related to the application's operations.
+### Viewing Output
 
-Saving and Loading Profiles
----------------------------
+Once commands are executed, their output is neatly organized for you in the "**Job Output**" section. To see the specific results for a host, just select it from the "**Host Status**" tree view.
 
-* **Saving Current Profile**: Click "Save Current Profile" to save the current settings into the active profile.
-* **Loading Profiles**: Profiles are automatically loaded from the configuration file on startup.
+* * *
 
-Troubleshooting
----------------
+### Debug Logging
 
-* **Common Issues**:
-    * **File Not Found**: Ensure the specified file paths are correct and the files exist.
-    * **Invalid Format**: Check that the input files are formatted correctly as per the specifications.
-    * **SSH Connection Errors**: Verify that the SSH credentials are correct and that the hosts are reachable.
+Gain deeper insights into ShellPilot's operations:
 
-Contact and Support
--------------------
+* *   **Enabling Debug Logging**: Check the "**Enable Debug Log**" box to activate detailed debug logging.
+* *   **Viewing Debug Logs**: All related logs will be displayed in the **debug console**, aiding in troubleshooting and transparency.
 
-For further assistance, contact the developer:
+* * *
 
-* **Name**: Rhythm Kr. Dasgupta
-* **Email**: [www.linkedin.com/in/rhythmkrdasgupta/](mailto:www.linkedin.com/in/rhythmkrdasgupta/)
+### Saving and Loading Profiles
 
-Conclusion
-----------
+ShellPilot makes managing your configurations effortless:
 
-ShellPilot is a powerful tool for managing SSH command execution across multiple hosts. By following this user guide, you can effectively utilize its features for automated compliance scanning and reporting. For any additional questions or support, please reach out to the developer.
+* *   **Saving Current Profile**: Click "**Save Current Profile**" to save your current settings to the active profile, ensuring your work is preserved.
+* *   **Loading Profiles**: No need to worry about manually loading! Your profiles are **automatically loaded** from the configuration file every time ShellPilot starts up.
+
+* * *
+
+### Troubleshooting
+
+Running into a snag? Here are some common issues and quick fixes:
+
+* *   **File Not Found**: Double-check that your specified file paths are absolutely correct and that the files actually exist in those locations.
+* *   **Invalid Format**: Ensure your input files strictly adhere to the specified CSV or text formats.
+* *   **SSH Connection Errors**: Verify your SSH credentials are accurate and that your hosts are reachable on the network.
+
+* * *
+
+### Contact and Support
+
+Need a hand? Don't hesitate to reach out!
+
+* *   **Rhythm Kr. Dasgupta**
+* *   **linkedin**: [www.linkedin.com/in/rhythmkrdasgupta/]
+* *   **ResearchGate**: [https://www.researchgate.net/profile/Rhythm-Dasgupta]
+
+* * *
+
+### Conclusion
+
+ShellPilot is an incredibly powerful tool for streamlining your SSH command execution across multiple hosts. By following this user guide, you'll be able to harness its full potential for automated compliance scanning and reporting. We hope this guide helps you unlock a new level of efficiency!
+
+Do you have any further questions about getting started with ShellPilot?
