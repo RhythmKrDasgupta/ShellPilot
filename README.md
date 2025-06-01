@@ -1,9 +1,7 @@
 ## ShellPilot User Guide
 
 * * *
-![ShellPilot User Interface](ShellPilotGUI.gif)
-
-
+![ShellPilot User Interface](images/ShellPilot_Demo.gif)
 
 ### Overview
 
@@ -26,7 +24,7 @@ ShellPilot simplifies complex SSH automation, giving you unparalleled control an
 
 ### ShellPilot UI
 
-![ShellPilot User Interface](ShellPilotGUI.gif)
+![ShellPilot User Interface](images/ShellPilotGUI.gif)
 
 * * *
 
@@ -113,6 +111,9 @@ uptime
 ```
 
 * * *
+### CISCO IOS 17 SCD Control
+
+![ShellPilot User Interface](images/CISCO_Router_IOS_17_Control.gif)
 
 ### Execution Control
 
@@ -126,6 +127,11 @@ Ready to automate?
 ### Viewing Output
 
 Once commands are executed, their output is neatly organized for you in the "**Job Output**" section. To see the specific results for a host, just select it from the "**Host Status**" tree view.
+
+* * *
+### CISCO IOS 17 Compliance
+
+![ShellPilot User Interface](images/CISCO_Compliance_Report.gif)
 
 * * *
 
