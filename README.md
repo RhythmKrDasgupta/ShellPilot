@@ -23,7 +23,7 @@ ShellPilot simplifies complex SSH automation, giving you unparalleled control an
 
 ### ShellPilot UI
 
-![ShellPilot User Interface](ShellPilot_User_Interface_2.png)
+![ShellPilot User Interface](ShellPilotGUI.png)
 
 * * *
 
